@@ -1,4 +1,4 @@
-// Conhecimento para Todos: menu do celular, tamanho da letra e alto contraste
+// Conhecimento para Todos: menu, letra, alto contraste, progresso das aulas e animação ao rolar
 (function () {
   var html = document.documentElement;
   html.classList.add('js'); // avisa o CSS que o JavaScript está funcionando
@@ -6,6 +6,9 @@
   // Ler/gravar na memória do navegador (localStorage). O try/catch evita erro se ela estiver bloqueada.
   function ler(chave) { try { return localStorage.getItem(chave); } catch (e) { return null; } }
   function gravar(chave, valor) { try { localStorage.setItem(chave, valor); } catch (e) { /* segue sem salvar */ } }
+  function lerLista(chave) {
+    try { var v = JSON.parse(ler(chave) || '[]'); return Array.isArray(v) ? v : []; } catch (e) { return []; }
+  }
 
   var tamanho = parseInt(ler('cpt-fonte'), 10); // 0 = normal, 1 = grande, 2 = maior
   if (!(tamanho >= 0 && tamanho <= 2)) tamanho = 0;
@@ -69,5 +72,71 @@
         }, function () { location.hash = ancora; });
       });
     });
+
+    // Progresso: botão "Marcar aula como concluída" (só existe com JavaScript)
+    var ferr = document.querySelector('main[data-ferr]');
+    if (ferr) {
+      var chave = 'cpt-prog-' + ferr.getAttribute('data-ferr');
+      var feitas = lerLista(chave);
+      var aulas = ferr.querySelectorAll('article.aula');
+      var barra = document.createElement('div');
+      barra.className = 'barra-prog';
+      barra.innerHTML = '<div class="wrap"><p></p><div class="trilho-prog" role="progressbar" aria-label="Aulas concluídas" aria-valuemin="0"><span></span></div></div>';
+      ferr.insertBefore(barra, ferr.firstChild);
+      var texto = barra.querySelector('p'), trilho = barra.querySelector('.trilho-prog');
+      trilho.setAttribute('aria-valuemax', aulas.length);
+
+      function mostrar() {
+        var n = 0;
+        aulas.forEach(function (art) {
+          var on = feitas.indexOf(art.id) > -1;
+          if (on) n++;
+          var bola = document.querySelector('.caminho a[href="#' + art.id + '"]');
+          if (bola) bola.parentNode.classList.toggle('feita', on);
+          var b = art.querySelector('.concluir');
+          b.setAttribute('aria-pressed', on);
+          b.textContent = on ? 'Aula concluída (toque para desfazer)' : 'Marcar aula como concluída';
+        });
+        texto.textContent = n === aulas.length ? 'Trilha concluída! Parabéns!' : n + ' de ' + aulas.length + ' aulas';
+        trilho.setAttribute('aria-valuenow', n);
+        trilho.firstChild.style.width = (100 * n / aulas.length) + '%';
+      }
+      aulas.forEach(function (art) {
+        var b = document.createElement('button');
+        b.type = 'button'; b.className = 'concluir';
+        b.addEventListener('click', function () {
+          var i = feitas.indexOf(art.id);
+          if (i > -1) feitas.splice(i, 1); else feitas.push(art.id);
+          gravar(chave, JSON.stringify(feitas));
+          mostrar();
+        });
+        var acoes = art.querySelector('.copiar');
+        acoes = acoes ? acoes.parentNode : art;
+        acoes.classList.add('acoes');
+        acoes.appendChild(b);
+      });
+      mostrar();
+    }
+
+    // Cards das trilhas: mostra quantas aulas a pessoa já concluiu
+    document.querySelectorAll('.prog-card').forEach(function (p) {
+      var n = lerLista('cpt-prog-' + p.getAttribute('data-ferr')).length;
+      if (n > 0) p.textContent = 'Você concluiu ' + n + ' de ' + p.getAttribute('data-total') + ' aulas';
+    });
+
+    // Elementos que aparecem suavemente ao rolar (desligado com prefers-reduced-motion)
+    var reduzir = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if ('IntersectionObserver' in window && !reduzir) {
+      var obs = new IntersectionObserver(function (itens) {
+        itens.forEach(function (it) {
+          if (it.isIntersecting) { it.target.classList.add('vis'); obs.unobserve(it.target); }
+        });
+      }, { threshold: 0.08 });
+      document.querySelectorAll('.faixa .wrap > *, .aula').forEach(function (el) {
+        if (el.getBoundingClientRect().top < window.innerHeight) return; // o que já está na tela não some
+        el.classList.add('revela');
+        obs.observe(el);
+      });
+    }
   });
 })();
