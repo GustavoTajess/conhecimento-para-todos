@@ -15,6 +15,7 @@ Site estático com **37 aulas gratuitas** de Excel, Power BI, Word, PowerPoint e
 | `kit-empreendedor.html` | Planilha de controle financeiro, post no Canva e dicas de preço |
 | `feedback.html` | Botão para o formulário de opinião |
 | `sobre.html` | Sobre o projeto, o autor, o território e os ODS |
+| `404.html` | Página mostrada quando um endereço não existe (o GitHub Pages usa esta página sozinho) |
 
 Cada aula tem um endereço próprio, por exemplo `excel.html#excel-soma`.
 
@@ -71,6 +72,10 @@ O arquivo novo aparece em `downloads/controle-financeiro.xlsx`.
 
 Todos os caminhos do site são relativos (como `css/style.css`), então ele funciona dentro de uma subpasta do GitHub Pages.
 
+## Visual e recursos
+
+Estilo "caderno de bairro": fundo pontilhado, marca-texto, adesivos, ondas entre as seções e um mascote em SVG. Todas as ilustrações são SVG feitos à mão no próprio código (sem fotos nem fontes externas), e os desenhos repetidos usam `<symbol>` e `<use>`. Em cada aula há um botão **Marcar aula como concluída**: o progresso aparece na trilha de bolinhas e em uma barra no alto da página, e fica salvo só no navegador de quem usa. Sem JavaScript, o botão não aparece e o resto do site funciona normalmente.
+
 ## Acessibilidade
 
-Letra base de 18 px, botões para aumentar e diminuir a letra, modo de alto contraste, menu acessível por teclado, link "Pular para o conteúdo", páginas pensadas primeiro para o celular e áreas de toque de pelo menos 44 px. As escolhas de letra e contraste ficam salvas no navegador.
+Letra base de 18 px, botões para aumentar e diminuir a letra, modo de alto contraste (que esconde as decorações e as texturas), animações desligadas para quem prefere menos movimento, menu acessível por teclado, link "Pular para o conteúdo", páginas pensadas primeiro para o celular e áreas de toque de pelo menos 44 px. As escolhas de letra e contraste ficam salvas no navegador.

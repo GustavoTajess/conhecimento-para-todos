@@ -202,6 +202,46 @@ Termos técnicos que aparecem no projeto, explicados de forma simples.
 - **Para que serve:** evitar toques errados no celular. O mínimo recomendado é 44 por 44 pixels.
 - **Exemplo:** os links do índice de aulas ganharam `min-height: 44px`.
 
+## symbol e use (SVG reaproveitável)
+- **O que é:** `<symbol>` guarda um desenho SVG com um nome (`id`), e `<use href="#nome">` o desenha onde você quiser.
+- **Para que serve:** desenhar o mesmo ícone ou mascote várias vezes sem repetir o código, mantendo a página leve.
+- **Exemplo:** `<use href="#mascote-acena"/>` mostra o mascote acenando.
+
+## Sprite de SVG
+- **O que é:** um bloco escondido no começo da página com todos os `<symbol>` do site.
+- **Para que serve:** reunir os desenhos num lugar só. Ele fica dentro de cada página (e não em um arquivo separado) para funcionar também ao abrir o site com dois cliques.
+- **Exemplo:** o bloco logo depois de `<body>` com os ícones das ferramentas.
+
+## aria-hidden
+- **O que é:** atributo que manda o leitor de tela ignorar um elemento.
+- **Para que serve:** esconder enfeites (ilustrações decorativas) de quem usa leitor de tela, para não atrapalhar a leitura.
+- **Exemplo:** `<svg aria-hidden="true">` no mascote.
+
+## role="img" e aria-label
+- **O que é:** `role="img"` diz que o desenho é uma imagem, e `aria-label` dá a descrição em texto.
+- **Para que serve:** as mini-telas das aulas informam algo, então precisam de texto alternativo.
+- **Exemplo:** `<svg role="img" aria-label="Desenho da tela do Excel...">`.
+
+## position: sticky
+- **O que é:** um estilo que faz o elemento ficar "grudado" no alto da tela enquanto você rola.
+- **Para que serve:** manter a barra de progresso sempre visível.
+- **Exemplo:** `.barra-prog { position: sticky; top: 0; }`.
+
+## CSS mask
+- **O que é:** um recorte de CSS que usa o formato de uma imagem como "forma" para pintar uma cor.
+- **Para que serve:** colorir os ícones das caixas Dica, Pratique e Celular com a cor que quisermos, sem arquivos de imagem.
+- **Exemplo:** `mask: url(...) center / contain no-repeat;`.
+
+## IntersectionObserver
+- **O que é:** um recurso do JavaScript que avisa quando um elemento entra na parte visível da tela.
+- **Para que serve:** fazer os blocos aparecerem suavemente ao rolar a página.
+- **Exemplo:** quando a faixa "Escolha sua trilha" aparece na tela, ela ganha a classe `vis`.
+
+## prefers-reduced-motion
+- **O que é:** uma preferência do aparelho de quem não quer animações na tela.
+- **Para que serve:** o site desliga os movimentos (mascote flutuando, elementos aparecendo) para quem pediu isso.
+- **Exemplo:** `@media (prefers-reduced-motion: reduce) { ... }`.
+
 ## .gitignore
 - **O que é:** um arquivo que lista o que o Git deve ignorar.
 - **Para que serve:** não guardar nem publicar arquivos que não fazem parte do site.

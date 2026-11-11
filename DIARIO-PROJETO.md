@@ -72,3 +72,20 @@
 **O que foi corrigido:** os links do índice de aulas e os títulos dos cards de trilhas tinham 37 a 38 px de altura, abaixo dos 44 px da meta de toque. Foram aumentados. Também foram corrigidos dois saltos de nível de título (h1 para h4, e h2 para h4) em Power BI e Kit.
 
 **Pendências para o Gustavo:** trocar `LINK_DO_GOOGLE_FORMS` em feedback.html; preencher os resultados do diagnóstico em sobre.html (`[PREENCHER]`); testar a planilha no Excel ou no Google Planilhas; conferir as aulas de Canva, Word, PowerPoint e Power BI nos programas reais, já que os nomes dos botões mudam com o tempo; testar o site em um celular de verdade.
+
+## 2026-11-11 | Etapa I: novo visual (mais bonito e detalhado, ainda leve)
+**O que foi feito:** o visual do site inteiro foi refeito, sem fotos, sem fontes e sem bibliotecas externas.
+- **Identidade:** fundo pontilhado de caderno, marca-texto colorido nos títulos, adesivos inclinados, seções com fundos alternados e ondas entre elas, e um mascote (caderninho com carinha) em 3 versões: acenando (início, Sobre e Feedback), apontando (Trilhas e 404) e comemorando (Kit e rodapé).
+- **Início:** capa com ilustração (jovem com notebook e celular, gráficos e ícones das ferramentas flutuando), faixa "Como funciona" em 3 passos ligados por linha pontilhada, vitrine das 5 trilhas, destaque do Kit com planilha e moedas, e "Para quem é" com 4 perfis (doces, unhas, conserto de celular, emprego), cada um levando a uma aula ou ao Kit.
+- **Trilhas e aulas:** cards com ícone e cor de cada ferramenta, cabeçalho colorido em cada página de ferramenta, sumário em forma de trilha de bolinhas numeradas, botão "Marcar aula como concluída" com barra de progresso (salvo no navegador, com try/catch), passo a passo ligado por linha, caixas Dica, Pratique e Celular com ícones próprios e mini-telas ilustradas (Excel, PowerPoint, Word, Canva e Power BI).
+- **Kit:** cards em destaque, botão grande de download com o tamanho do arquivo, exemplo visual de post e o esquema custo → margem → preço final.
+- **Detalhes:** rodapé com ondas e mascote, página 404, elementos que aparecem suavemente ao rolar e mascote flutuando (tudo desligado com prefers-reduced-motion).
+
+**Decisões e por quê:**
+- A leveza continuou vencendo: tudo é SVG e CSS, os desenhos repetidos usam `<symbol>` e `<use>`, e a maior página (Excel) tem 70 KB somando HTML, CSS e JS (o limite era 150 KB).
+- No alto contraste, as decorações, os mascotes, as ilustrações e as texturas são escondidos, e o site fica só com texto, bordas e amarelo sobre preto.
+- O botão de progresso só existe com JavaScript. Sem ele, as aulas continuam completas.
+- Os ícones das ferramentas foram desenhados por nós (inspirados em planilha, gráfico, página, slide e paleta), e não são os logos oficiais das marcas.
+- O "404" foi feito como a página 404.html do GitHub Pages.
+
+**Revisão automática (Playwright, 360 e 1280 px, normal e alto contraste):** 37 aulas; sem rolagem horizontal; títulos em ordem; contraste dentro do mínimo; decorações escondidas no alto contraste; progresso salvo ao recarregar e mostrado nos cards; menu por teclado; site funcionando sem JavaScript; links e âncoras sem erro; nenhuma página acima de 150 KB. Foram corrigidos: um código longo que estourava a largura no celular (Excel), um cartão do Kit que esticava a grade e setas sem aria-hidden.
