@@ -12,3 +12,12 @@
 - Total de 37 aulas planejadas (9 de Excel e 7 de cada uma das outras quatro ferramentas). Cards de ferramentas sem página ficam como "Em breve".
 - Link do Google Forms deixado como `LINK_DO_GOOGLE_FORMS`, em um único lugar (feedback.html), até o formulário ficar pronto.
 - Os resultados do diagnóstico em Sobre estão como [PREENCHER]: ainda faltam os dados reais.
+
+## 2026-11-11 | Etapa B: aulas de Excel
+**O que foi feito:** página `excel.html` com 9 aulas (4 do nível Básico e 5 do Intermediário). O card do Excel em Trilhas passou de "Em breve" para link.
+
+**Decisões e por quê:**
+- Todas as aulas seguem a mesma estrutura (objetivos, explicação, passo a passo, dica, exercício e se funciona no celular), para o aluno saber o que esperar.
+- Os exemplos usam situações de renda extra: venda de doces, gastos da semana, meta de vendas, tabela de preços.
+- Cada aula tem um endereço próprio (`excel.html#excel-soma`, por exemplo), para ser compartilhada por WhatsApp.
+- Aulas com fórmulas avisam que o Excel em português usa ponto e vírgula, e as que são difíceis no celular (PROCV, tabela dinâmica) recomendam o computador.

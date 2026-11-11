@@ -147,6 +147,26 @@ Termos técnicos que aparecem no projeto, explicados de forma simples.
 - **Para que serve:** organizar o trabalho; o GitHub Pages publica a `main`.
 - **Exemplo:** `git init -b main` cria o repositório já na `main`.
 
+## Âncora (#id)
+- **O que é:** um endereço dentro da página, criado com o atributo `id` e acessado com `#` no link.
+- **Para que serve:** compartilhar o link direto de uma aula.
+- **Exemplo:** `excel.html#excel-soma` abre a página já na aula 5.
+
+## article e section
+- **O que é:** tags semânticas. `article` é um conteúdo completo (uma aula); `section` é uma seção de um assunto.
+- **Para que serve:** organizam a página para leitores de tela e para o Google.
+- **Exemplo:** cada aula de Excel é um `<article>`.
+
+## aria-live
+- **O que é:** atributo que manda o leitor de tela anunciar quando um texto muda.
+- **Para que serve:** quem não enxerga a tela fica sabendo que o link foi copiado.
+- **Exemplo:** `aria-live="polite"` anuncia "Link copiado!" sem interromper a leitura.
+
+## table (tabela HTML)
+- **O que é:** tags `table`, `tr` (linha), `th` (título) e `td` (célula) para mostrar dados em linhas e colunas.
+- **Para que serve:** exibir exemplos de planilhas nas aulas.
+- **Exemplo:** `<tr><td>Brigadeiro</td><td>2,50</td></tr>` é uma linha com duas células.
+
 ## .gitignore
 - **O que é:** um arquivo que lista o que o Git deve ignorar.
 - **Para que serve:** não guardar nem publicar arquivos que não fazem parte do site.
