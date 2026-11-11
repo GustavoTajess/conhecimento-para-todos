@@ -31,3 +31,11 @@
 - Python e a biblioteca openpyxl foram usados só para gerar o arquivo. O script fica no projeto para a planilha poder ser refeita, mas não faz parte do site.
 - Precificação em 3 passos (custo, margem, preço final) com um exemplo concreto de brigadeiro (valores de exemplo, não de pesquisa). Foram incluídos os erros mais comuns, como esquecer o gás e o tempo de trabalho.
 - Pendência: a planilha foi conferida pelo conteúdo das fórmulas, mas não foi calculada em um programa de planilhas. Falta testar abrindo no Excel ou no Google Planilhas.
+
+## 2026-11-11 | Etapa D: aulas de Canva
+**O que foi feito:** página `canva.html` com 7 aulas (4 do nível Básico e 3 do Intermediário); card do Canva em Trilhas virou link; o passo a passo do post no Kit passou a apontar para a aula completa.
+
+**Decisões e por quê:**
+- Canva vem antes de Word, PowerPoint e Power BI na ordem de construção porque é o mais usado pelo celular e ajuda direto na divulgação de quem vende.
+- As aulas mostram as limitações do plano gratuito (modelos com coroa, fundo transparente do logo) para evitar frustração.
+- Os nomes de botões do Canva mudam com o tempo. Por isso as aulas descrevem a ideia ("menu lateral", "Compartilhar") e avisam que os nomes podem variar. Convém conferir as aulas no Canva real antes da divulgação.
