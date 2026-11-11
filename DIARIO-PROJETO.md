@@ -21,3 +21,13 @@
 - Os exemplos usam situações de renda extra: venda de doces, gastos da semana, meta de vendas, tabela de preços.
 - Cada aula tem um endereço próprio (`excel.html#excel-soma`, por exemplo), para ser compartilhada por WhatsApp.
 - Aulas com fórmulas avisam que o Excel em português usa ponto e vírgula, e as que são difíceis no celular (PROCV, tabela dinâmica) recomendam o computador.
+
+## 2026-11-11 | Etapa C: planilha e Kit do Jovem Empreendedor
+**O que foi feito:** planilha `downloads/controle-financeiro.xlsx` (abas Como usar, Entradas, Saídas e Resumo mensal, com saldo do mês e saldo acumulado), gerada pelo script `ferramentas/gerar_planilha.py`; página `kit-empreendedor.html` com o download, o passo a passo do post no Canva e a explicação de como calcular o preço.
+
+**Decisões e por quê:**
+- A planilha vem com linhas de exemplo marcadas "(exemplo)", para a pessoa ver o resumo funcionando antes de usar. A aba Como usar manda apagá-las.
+- O Resumo mensal soma por data, e o ano é escolhido numa célula, assim a mesma planilha serve para qualquer ano.
+- Python e a biblioteca openpyxl foram usados só para gerar o arquivo. O script fica no projeto para a planilha poder ser refeita, mas não faz parte do site.
+- Precificação em 3 passos (custo, margem, preço final) com um exemplo concreto de brigadeiro (valores de exemplo, não de pesquisa). Foram incluídos os erros mais comuns, como esquecer o gás e o tempo de trabalho.
+- Pendência: a planilha foi conferida pelo conteúdo das fórmulas, mas não foi calculada em um programa de planilhas. Falta testar abrindo no Excel ou no Google Planilhas.

@@ -167,6 +167,26 @@ Termos técnicos que aparecem no projeto, explicados de forma simples.
 - **Para que serve:** exibir exemplos de planilhas nas aulas.
 - **Exemplo:** `<tr><td>Brigadeiro</td><td>2,50</td></tr>` é uma linha com duas células.
 
+## Atributo download
+- **O que é:** atributo de um link que manda o navegador baixar o arquivo em vez de abri-lo.
+- **Para que serve:** entregar a planilha para o aluno.
+- **Exemplo:** `<a href="downloads/controle-financeiro.xlsx" download>`.
+
+## Script (Python)
+- **O que é:** um arquivo com instruções em uma linguagem de programação, que o computador executa.
+- **Para que serve:** automatizar uma tarefa. Aqui, montar a planilha .xlsx.
+- **Exemplo:** `python ferramentas/gerar_planilha.py` cria o arquivo da planilha.
+
+## Biblioteca e pip
+- **O que é:** biblioteca é um código pronto que outras pessoas escreveram. O `pip` é o programa que instala bibliotecas no Python.
+- **Para que serve:** não precisar fazer tudo do zero.
+- **Exemplo:** `python -m pip install openpyxl` instala a biblioteca que escreve arquivos do Excel.
+
+## SOMASES (SUMIFS)
+- **O que é:** função de planilha que soma só os valores que atendem a condições.
+- **Para que serve:** somar os valores de um mês específico no Resumo mensal.
+- **Exemplo:** soma os valores cuja data está entre 01/03 e 31/03.
+
 ## .gitignore
 - **O que é:** um arquivo que lista o que o Git deve ignorar.
 - **Para que serve:** não guardar nem publicar arquivos que não fazem parte do site.
