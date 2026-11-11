@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
@@ -69,86 +69,119 @@
     </nav>
   </div>
 </header>
-<main id="conteudo" class="wrap">
-  <h1>Kit do Jovem Empreendedor</h1>
-  <p class="lead">Três ferramentas simples para quem quer vender e ganhar uma renda extra: controlar o dinheiro, divulgar o que vende e calcular o preço certo.</p>
-  <nav class="sumario" aria-label="Partes do kit">
-    <h2>Nesta página</h2>
-    <ul>
-      <li><a href="#planilha">1. Planilha de controle financeiro</a></li>
-      <li><a href="#post-canva">2. Post de divulgação no Canva</a></li>
-      <li><a href="#preco">3. Como calcular o preço</a></li>
-    </ul>
-  </nav>
-
-  <section id="planilha">
-    <h2>1. Planilha de controle financeiro</h2>
-    <p>Uma planilha pronta para anotar o dinheiro que entra e o que sai. Ela faz as contas sozinha e mostra o saldo de cada mês.</p>
-    <p>Ela tem 4 abas: <strong>Como usar</strong>, <strong>Entradas</strong>, <strong>Saídas</strong> e <strong>Resumo mensal</strong>.</p>
-    <p><a class="btn" href="downloads/controle-financeiro.xlsx" download>Baixar a planilha (arquivo Excel, 16 KB)</a></p>
-    <h3>Como usar</h3>
-    <ol class="passos">
-      <li>Baixe o arquivo e abra no Excel (computador ou celular). Se preferir, abra no Google Planilhas.</li>
-      <li>Leia a aba <strong>Como usar</strong> e apague as linhas de exemplo.</li>
-      <li>Anote cada venda na aba <strong>Entradas</strong> e cada gasto na aba <strong>Saídas</strong>.</li>
-      <li>Abra a aba <strong>Resumo mensal</strong> para ver o saldo. Se ele estiver em vermelho, você gastou mais do que ganhou naquele mês.</li>
-    </ol>
-    <p>Quer entender como a planilha funciona? Veja as <a href="excel.html#excel-soma">aulas de Excel</a>.</p>
+<main id="conteudo">
+  <section class="capa">
+    <div class="wrap capa-in">
+      <div>
+        <span class="adesivo verde">Grátis</span>
+        <h1>Kit do Jovem <span class="marca marca-rosa">Empreendedor</span></h1>
+        <p class="lead">Três ferramentas simples para quem quer vender e ganhar uma renda extra: controlar o dinheiro, divulgar o que vende e calcular o preço certo.</p>
+        <nav class="botoes" aria-label="Partes do kit">
+          <a class="btn btn-sec" href="#planilha">1. Planilha</a>
+          <a class="btn btn-sec" href="#post-canva">2. Post no Canva</a>
+          <a class="btn btn-sec" href="#preco">3. Preço</a>
+        </nav>
+      </div>
+      <div class="capa-arte"><svg class="mascote" viewBox="0 0 130 150" aria-hidden="true"><use href="#mascote-comemora"/></svg></div>
+    </div>
+    <svg class="onda-b" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><use href="#onda"/></svg>
   </section>
 
-  <section id="post-canva">
-    <h2>2. Post de divulgação no Canva</h2>
-    <p>Um post é uma imagem para mostrar o que você vende, no Instagram, no Status ou nos grupos do WhatsApp. O Canva tem um plano gratuito e funciona no celular.</p>
-    <ol class="passos">
-      <li>Entre em <strong>canva.com</strong> ou abra o aplicativo e crie uma conta grátis.</li>
-      <li>Procure por <strong>Post do Instagram</strong> e toque nele.</li>
-      <li>Escolha um modelo gratuito que combine com o que você vende. Dá para procurar por palavras como "doces" ou "serviços".</li>
-      <li>Toque em cada texto e troque pelo seu: o que você vende, o preço e como pedir (seu WhatsApp).</li>
-      <li>Troque as cores e a foto. Use uma foto sua do produto, bem clara. Prefira poucas cores e letras grandes.</li>
-      <li>Toque em <strong>Compartilhar</strong>, depois em <strong>Baixar</strong>, e escolha <strong>PNG</strong>. Agora é só enviar pelo WhatsApp ou postar.</li>
-    </ol>
-    <div class="caixa dica"><h3>Dica</h3><p>Um bom post responde 3 perguntas: <em>O que é?</em> <em>Quanto custa?</em> <em>Como eu peço?</em> Se tiver essas 3 informações, já está bom.</p></div>
-    <p>Quer aprender com mais detalhes? Veja a <a href="canva.html#canva-post">aula de post de divulgação</a>.</p>
-  </section>
+  <div class="wrap conteudo kit-cards">
 
-  <section id="preco">
-    <h2>3. Como calcular o preço</h2>
-    <p>Muita gente cobra "o que o vizinho cobra" e acaba tendo prejuízo sem saber. Para acertar, siga 3 passos: descubra o <strong>custo</strong>, escolha a <strong>margem</strong> e calcule o <strong>preço final</strong>.</p>
+    <section class="kit-card" id="planilha">
+      <span class="adesivo">Ferramenta 1</span>
+      <h2>Planilha de controle financeiro</h2>
+      <p>Uma planilha pronta para anotar o dinheiro que entra e o que sai. Ela faz as contas sozinha e mostra o saldo de cada mês. Tem 4 abas: <strong>Como usar</strong>, <strong>Entradas</strong>, <strong>Saídas</strong> e <strong>Resumo mensal</strong>.</p>
+      <p>
+        <a class="baixar" href="downloads/controle-financeiro.xlsx" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-baixar"/></svg>
+          <span><strong>Baixar a planilha</strong><span>Arquivo Excel (.xlsx) · 16 KB</span></span>
+        </a>
+      </p>
+      <h3>Como usar</h3>
+      <ol class="passos">
+        <li>Baixe o arquivo e abra no Excel (computador ou celular). Se preferir, abra no Google Planilhas.</li>
+        <li>Leia a aba <strong>Como usar</strong> e apague as linhas de exemplo.</li>
+        <li>Anote cada venda na aba <strong>Entradas</strong> e cada gasto na aba <strong>Saídas</strong>.</li>
+        <li>Abra a aba <strong>Resumo mensal</strong> para ver o saldo. Se ele estiver em vermelho, você gastou mais do que ganhou naquele mês.</li>
+      </ol>
+      <p>Quer entender como a planilha funciona? Veja as <a href="excel.html#excel-soma">aulas de Excel</a>.</p>
+    </section>
 
-    <h3>Passo 1: custo</h3>
-    <p>Custo é tudo que você gasta para fazer o produto. Some tudo e divida pela quantidade que a receita rende. Exemplo: uma receita que rende 30 brigadeiros.</p>
-    <div class="tabela-wrap"><table>
-      <caption class="suave">Custo de uma receita de 30 brigadeiros (valores de exemplo)</caption>
-      <tr><th>Item</th><th>Valor</th></tr>
-      <tr><td>Leite condensado</td><td>R$ 7,00</td></tr>
-      <tr><td>Creme de leite</td><td>R$ 3,00</td></tr>
-      <tr><td>Chocolate em pó</td><td>R$ 4,00</td></tr>
-      <tr><td>Granulado</td><td>R$ 3,00</td></tr>
-      <tr><td>Forminhas</td><td>R$ 4,00</td></tr>
-      <tr><td>Gás</td><td>R$ 3,00</td></tr>
-      <tr><td><strong>Total</strong></td><td><strong>R$ 24,00</strong></td></tr>
-    </table></div>
-    <p>Custo de cada brigadeiro: R$ 24,00 ÷ 30 = <strong>R$ 0,80</strong>.</p>
+    <section class="kit-card" id="post-canva">
+      <span class="adesivo">Ferramenta 2</span>
+      <h2>Post de divulgação no Canva</h2>
+      <p>Um post é uma imagem para mostrar o que você vende, no Instagram, no Status ou nos grupos do WhatsApp. O Canva tem um plano gratuito e funciona no celular.</p>
+      <figure class="tela"><svg viewBox="0 0 360 190" role="img" aria-label="Exemplo de post: título Brigadeiros gourmet, preço R$ 1,75 a unidade e botão Peça pelo WhatsApp. Ao lado, as 3 perguntas que o post responde: o que é, quanto custa e como eu peço." font-family="system-ui,Segoe UI,Arial,sans-serif"><rect width="360" height="190" fill="#fff"/>
+        <rect x="14" y="10" width="200" height="170" rx="12" fill="#FFF4D6" stroke="#E8A33A" stroke-width="3"/>
+        <text x="114" y="50" font-size="19" font-weight="800" text-anchor="middle" fill="#B4441F">Brigadeiros</text><text x="114" y="72" font-size="19" font-weight="800" text-anchor="middle" fill="#B4441F">gourmet</text>
+        <circle cx="114" cy="98" r="11" fill="#6B3E26"/><text x="114" y="130" font-size="15" font-weight="800" text-anchor="middle" fill="#0B5D5B">R$ 1,75 a unidade</text>
+        <rect x="34" y="144" width="160" height="26" rx="13" fill="#0B5D5B"/><text x="114" y="162" font-size="12" font-weight="700" text-anchor="middle" fill="#fff">Peça pelo WhatsApp</text>
+        <g stroke="#B4441F" stroke-width="2" stroke-dasharray="3 3"><path d="M214 62h14M214 118h14M214 157h14"/></g>
+        <g fill="#B4441F"><circle cx="240" cy="62" r="11"/><circle cx="240" cy="118" r="11"/><circle cx="240" cy="157" r="11"/></g>
+        <g font-size="12" font-weight="800" fill="#fff" text-anchor="middle"><text x="240" y="66">1</text><text x="240" y="122">2</text><text x="240" y="161">3</text></g>
+        <g font-size="12" font-weight="700" fill="#1F2328"><text x="258" y="66">O que é?</text><text x="258" y="122">Quanto custa?</text><text x="258" y="161">Como eu peço?</text></g></svg></figure>
+      <ol class="passos">
+        <li>Entre em <strong>canva.com</strong> ou abra o aplicativo e crie uma conta grátis.</li>
+        <li>Procure por <strong>Post do Instagram</strong> e toque nele.</li>
+        <li>Escolha um modelo gratuito que combine com o que você vende. Dá para procurar por palavras como "doces" ou "serviços".</li>
+        <li>Toque em cada texto e troque pelo seu: o que você vende, o preço e como pedir (seu WhatsApp).</li>
+        <li>Troque as cores e a foto. Use uma foto sua do produto, bem clara. Prefira poucas cores e letras grandes.</li>
+        <li>Toque em <strong>Compartilhar</strong>, depois em <strong>Baixar</strong>, e escolha <strong>PNG</strong>. Agora é só enviar pelo WhatsApp ou postar.</li>
+      </ol>
+      <div class="caixa dica"><h3>Dica</h3><p>Um bom post responde 3 perguntas: <em>O que é?</em> <em>Quanto custa?</em> <em>Como eu peço?</em> Se tiver essas 3 informações, já está bom.</p></div>
+      <p>Quer aprender com mais detalhes? Veja a <a href="canva.html#canva-post">aula de post de divulgação</a>.</p>
+    </section>
 
-    <h3>Passo 2: margem</h3>
-    <p>Margem é quanto você quer ganhar além do custo. Ela paga o seu trabalho e o seu tempo. Uma margem de 100% quer dizer que você ganha o mesmo valor que gastou.</p>
+    <section class="kit-card" id="preco">
+      <span class="adesivo">Ferramenta 3</span>
+      <h2>Como calcular o preço</h2>
+      <p>Muita gente cobra "o que o vizinho cobra" e acaba tendo prejuízo sem saber. Para acertar, siga 3 passos: descubra o <strong>custo</strong>, escolha a <strong>margem</strong> e calcule o <strong>preço final</strong>.</p>
 
-    <h3>Passo 3: preço final</h3>
-    <p><strong>Preço final = custo + (custo × margem)</strong></p>
-    <p>Com margem de 100%: R$ 0,80 + (R$ 0,80 × 1) = <strong>R$ 1,60</strong>. Para facilitar o troco, arredonde para <strong>R$ 1,75</strong>. Assim, cada brigadeiro deixa R$ 0,95 para você (R$ 1,75 − R$ 0,80).</p>
-    <div class="caixa dica"><h4>Dica</h4><p>Você mesmo escolhe a margem. Se a sua ficar muito alta e ninguém comprar, teste uma menor. Só não deixe a margem chegar a zero: aí você trabalha de graça.</p></div>
+      <ol class="esquema" aria-label="Do custo ao preço final, no exemplo do brigadeiro">
+        <li class="item"><span class="rotulo">1. Custo</span><span class="valor">R$ 0,80</span><span class="suave">de cada brigadeiro</span></li>
+        <li class="seta" aria-hidden="true"><svg viewBox="0 0 24 40" aria-hidden="true"><use href="#seta"/></svg></li>
+        <li class="item"><span class="rotulo">2. Margem</span><span class="valor">100%</span><span class="suave">ganho = o custo</span></li>
+        <li class="seta" aria-hidden="true"><svg viewBox="0 0 24 40" aria-hidden="true"><use href="#seta"/></svg></li>
+        <li class="item"><span class="rotulo">3. Preço final</span><span class="valor">R$ 1,75</span><span class="suave">R$ 1,60 arredondado</span></li>
+      </ol>
 
-    <h3>Erros comuns</h3>
-    <ul>
-      <li>Esquecer o gás, a energia e o transporte na hora de somar o custo.</li>
-      <li>Esquecer a embalagem (forminha, caixa, sacola, etiqueta).</li>
-      <li>Não contar o seu tempo de trabalho.</li>
-      <li>Copiar o preço de outra pessoa sem fazer a sua conta.</li>
-    </ul>
-    <p>Use a planilha do item 1 para somar os custos. Dá para fazer a conta do preço no Excel com <code>=B2*2</code> (custo vezes 2, que é uma margem de 100%).</p>
-  </section>
+      <h3>Passo 1: custo</h3>
+      <p>Custo é tudo que você gasta para fazer o produto. Some tudo e divida pela quantidade que a receita rende. Exemplo: uma receita que rende 30 brigadeiros.</p>
+      <div class="tabela-wrap"><table>
+        <caption class="suave">Custo de uma receita de 30 brigadeiros (valores de exemplo)</caption>
+        <tr><th>Item</th><th>Valor</th></tr>
+        <tr><td>Leite condensado</td><td>R$ 7,00</td></tr>
+        <tr><td>Creme de leite</td><td>R$ 3,00</td></tr>
+        <tr><td>Chocolate em pó</td><td>R$ 4,00</td></tr>
+        <tr><td>Granulado</td><td>R$ 3,00</td></tr>
+        <tr><td>Forminhas</td><td>R$ 4,00</td></tr>
+        <tr><td>Gás</td><td>R$ 3,00</td></tr>
+        <tr><td><strong>Total</strong></td><td><strong>R$ 24,00</strong></td></tr>
+      </table></div>
+      <p>Custo de cada brigadeiro: R$ 24,00 ÷ 30 = <strong>R$ 0,80</strong>.</p>
 
-  <p><a class="btn btn-sec" href="trilhas.html">Ver as trilhas de aulas</a></p>
+      <h3>Passo 2: margem</h3>
+      <p>Margem é quanto você quer ganhar além do custo. Ela paga o seu trabalho e o seu tempo. Uma margem de 100% quer dizer que você ganha o mesmo valor que gastou.</p>
+
+      <h3>Passo 3: preço final</h3>
+      <p><strong>Preço final = custo + (custo × margem)</strong></p>
+      <p>Com margem de 100%: R$ 0,80 + (R$ 0,80 × 1) = <strong>R$ 1,60</strong>. Para facilitar o troco, arredonde para <strong>R$ 1,75</strong>. Assim, cada brigadeiro deixa R$ 0,95 para você (R$ 1,75 − R$ 0,80).</p>
+      <div class="caixa dica"><h4>Dica</h4><p>Você mesmo escolhe a margem. Se a sua ficar muito alta e ninguém comprar, teste uma menor. Só não deixe a margem chegar a zero: aí você trabalha de graça.</p></div>
+
+      <h3>Erros comuns</h3>
+      <ul>
+        <li>Esquecer o gás, a energia e o transporte na hora de somar o custo.</li>
+        <li>Esquecer a embalagem (forminha, caixa, sacola, etiqueta).</li>
+        <li>Não contar o seu tempo de trabalho.</li>
+        <li>Copiar o preço de outra pessoa sem fazer a sua conta.</li>
+      </ul>
+      <p>Use a planilha da ferramenta 1 para somar os custos. Dá para fazer a conta do preço no Excel com <code>=B2*2</code> (custo vezes 2, que é uma margem de 100%).</p>
+    </section>
+
+    <p><a class="btn btn-sec" href="trilhas.html">Ver as trilhas de aulas</a></p>
+  </div>
 </main>
 <footer class="rodape">
   <svg class="onda" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><use href="#onda"/></svg>
