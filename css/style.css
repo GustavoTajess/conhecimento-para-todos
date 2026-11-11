@@ -90,6 +90,7 @@ html.alto .marca { background: none; text-decoration: underline; }
 .cartao:hover, .cartao:focus-within { border-color: var(--verde); }
 .cartao h2, .cartao h3 { margin-top: .5rem; }
 .cartao p { margin: .4rem 0; }
+.cartao-link { display: inline-flex; align-items: center; min-height: 44px; }
 .cartao-link::after { content: ""; position: absolute; inset: 0; }
 .destaque { border-color: var(--verde); border-width: 3px; }
 .selo { display: inline-grid; place-items: center; width: 3rem; height: 3rem; border-radius: .8rem; background: var(--c);
@@ -111,7 +112,7 @@ html.alto .etiqueta { border-color: #fff; }
 .sumario { background: var(--cartao); border: 2px solid var(--borda); border-radius: .9rem; padding: .5rem 1.2rem 1rem; }
 .sumario h2 { margin-top: .8rem; }
 .sumario ul { margin: .3rem 0; padding-left: 1.2rem; }
-.sumario a { display: inline-block; padding: .25rem 0; }
+.sumario a { display: inline-flex; align-items: center; min-height: 44px; }
 .aula { background: var(--cartao); border: 2px solid var(--borda); border-radius: .9rem; padding: 1rem 1.1rem; margin: 1.5rem 0; scroll-margin-top: 1rem; }
 .aula > :first-child { margin-top: 0; }
 .caixa { border: 1px solid var(--borda); border-left: .5rem solid var(--c, var(--verde)); border-radius: .5rem; padding: .7rem 1rem; margin: 1rem 0; background: var(--fundo); }

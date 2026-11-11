@@ -187,6 +187,21 @@ Termos técnicos que aparecem no projeto, explicados de forma simples.
 - **Para que serve:** somar os valores de um mês específico no Resumo mensal.
 - **Exemplo:** soma os valores cuja data está entre 01/03 e 31/03.
 
+## Servidor local (localhost)
+- **O que é:** um programa que abre o site no seu próprio computador, como se fosse a internet, mas só você vê.
+- **Para que serve:** testar o site do jeito que ele funcionará quando for publicado.
+- **Exemplo:** `python -m http.server 8000` e depois abrir `http://localhost:8000`.
+
+## Teste automatizado (Playwright)
+- **O que é:** um programa que abre o navegador sozinho, navega pelo site e confere se tudo está certo.
+- **Para que serve:** achar erros que passam batido, como links quebrados, texto de baixo contraste ou rolagem horizontal no celular.
+- **Exemplo:** a revisão final abriu as 10 páginas no celular e no computador.
+
+## Área de toque
+- **O que é:** o tamanho do espaço que o dedo precisa para acionar um botão ou link.
+- **Para que serve:** evitar toques errados no celular. O mínimo recomendado é 44 por 44 pixels.
+- **Exemplo:** os links do índice de aulas ganharam `min-height: 44px`.
+
 ## .gitignore
 - **O que é:** um arquivo que lista o que o Git deve ignorar.
 - **Para que serve:** não guardar nem publicar arquivos que não fazem parte do site.

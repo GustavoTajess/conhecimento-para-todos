@@ -63,3 +63,12 @@
 - O Power BI Desktop só roda em Windows e o aplicativo de celular só mostra painéis prontos. Isso foi dito com clareza no começo da página e em cada aula, para ninguém perder tempo tentando pelo celular.
 - As aulas reaproveitam a lista de vendas do Excel (aula de tabela dinâmica), para o aluno ligar uma trilha à outra.
 - Ficou como Intermediário um painel de vendas com cartão, dois gráficos e um filtro, que responde às três perguntas básicas de um pequeno negócio.
+
+## 2026-11-11 | Etapa H: README e revisão final
+**O que foi feito:** README.md (o que é, como abrir no computador, o que falta preencher, como refazer a planilha e como publicar) e revisão automática de todas as páginas com o Playwright, no celular (360 px) e no computador (1280 px), no modo normal e no de alto contraste.
+
+**O que a revisão conferiu:** 37 aulas encontradas; um único título principal por página; títulos em ordem; idioma pt-BR; letra base de 18 px; nenhuma rolagem horizontal; contraste de texto adequado nos dois modos; link "Pular para o conteúdo"; menu abrindo e fechando pelo teclado (Enter e Esc); escolha de letra e de alto contraste lembrada ao recarregar; site ainda navegável com o JavaScript desligado; nenhum link ou âncora quebrado; nenhum erro no console; páginas entre 15 e 34 KB.
+
+**O que foi corrigido:** os links do índice de aulas e os títulos dos cards de trilhas tinham 37 a 38 px de altura, abaixo dos 44 px da meta de toque. Foram aumentados. Também foram corrigidos dois saltos de nível de título (h1 para h4, e h2 para h4) em Power BI e Kit.
+
+**Pendências para o Gustavo:** trocar `LINK_DO_GOOGLE_FORMS` em feedback.html; preencher os resultados do diagnóstico em sobre.html (`[PREENCHER]`); testar a planilha no Excel ou no Google Planilhas; conferir as aulas de Canva, Word, PowerPoint e Power BI nos programas reais, já que os nomes dos botões mudam com o tempo; testar o site em um celular de verdade.
