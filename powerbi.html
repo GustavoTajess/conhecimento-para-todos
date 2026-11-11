@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%92%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
+<title>Power BI: aulas grátis do básico ao intermediário | Conhecimento para Todos</title>
+<meta name="description" content="7 aulas gratuitas de Power BI em linguagem simples: instalar, importar uma planilha, criar gráficos, filtros e um painel de vendas.">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="wrap topo-in">
+    <a class="logo" href="index.html" aria-label="Conhecimento para Todos, página inicial">
+      <svg width="40" height="40" viewBox="0 0 36 36" aria-hidden="true"><rect class="a" width="36" height="36" rx="9"/><path class="b" d="M7 11h8.5c1.6 0 2.5.9 2.5 2.4V27c0-1.2-.9-1.9-2.4-1.9H7zM29 11h-8.5C18.9 11 18 11.900 18 13.400V27c0-1.200.9-1.900 2.400-1.900H29z"/></svg>
+      <span>Conhecimento <b>para Todos</b></span>
+    </a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <div class="ajustes" role="group" aria-label="Ajustes de leitura">
+      <button type="button" data-fonte="-" aria-label="Diminuir o tamanho da letra">A−</button>
+      <button type="button" data-fonte="+" aria-label="Aumentar o tamanho da letra">A+</button>
+      <button type="button" data-contraste aria-pressed="false">Alto contraste</button>
+    </div>
+    <nav id="menu" class="menu" aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="trilhas.html" aria-current="page">Trilhas</a></li>
+        <li><a href="kit-empreendedor.html">Kit do Empreendedor</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="conteudo" class="wrap">
+  <h1>Power BI: aulas grátis</h1>
+  <p class="lead">O Power BI transforma planilhas cheias de números em gráficos fáceis de entender. Um conjunto de gráficos na mesma tela é chamado de <strong>painel</strong> (ou <em>dashboard</em>).</p>
+  <div class="caixa celular">
+    <p><strong>Importante: só funciona em computador com Windows</strong></p>
+    <p>O programa que usamos nestas aulas, o <strong>Power BI Desktop</strong>, é gratuito, mas só roda em computador com Windows. No celular existe um aplicativo do Power BI, mas ele serve apenas para <em>ver</em> painéis prontos. Por isso, em todas as aulas você verá que o celular não serve para criar.</p>
+  </div>
+  <p>Se você já fez a <a href="excel.html">trilha de Excel</a>, vai se sentir em casa: o Power BI usa tabelas e números parecidos.</p>
+  <p>Os nomes dos botões podem mudar um pouco quando o programa é atualizado, mas a ideia é a mesma.</p>
+
+  <nav class="sumario" aria-label="Aulas de Power BI">
+    <h2>Nesta página</h2>
+    <h3>Básico</h3>
+    <ul>
+      <li><a href="#pbi-instalar">1. O que é e como instalar de graça</a></li>
+      <li><a href="#pbi-tela">2. Conhecendo a tela</a></li>
+      <li><a href="#pbi-importar">3. Importar uma planilha do Excel</a></li>
+      <li><a href="#pbi-grafico">4. Primeiro gráfico e salvar</a></li>
+    </ul>
+    <h3>Intermediário</h3>
+    <ul>
+      <li><a href="#pbi-cartoes">5. Cartões e tipos de gráfico</a></li>
+      <li><a href="#pbi-filtros">6. Filtros e segmentações</a></li>
+      <li><a href="#pbi-painel">7. Montar um painel simples de vendas</a></li>
+    </ul>
+  </nav>
+
+  <h2>Nível Básico</h2>
+
+  <article class="aula" id="pbi-instalar">
+    <h3>Aula 1: O que é o Power BI e como instalar de graça</h3>
+    <p><span class="etiqueta">Nível: Básico</span></p>
+    <h4>Você vai aprender</h4>
+    <ul>
+      <li>Para que serve o Power BI.</li>
+      <li>Instalar o Power BI Desktop no seu computador.</li>
+    </ul>
+    <h4>Explicação</h4>
+    <p>Imagine uma planilha com 500 vendas. Ler tudo é difícil. O Power BI lê essa planilha e mostra, em gráficos, o que vende mais, em que mês e para quem. Isso ajuda a tomar decisões, como "o que devo produzir mais?".</p>
+    <h4>Passo a passo</h4>
+    <ol class="passos">
+      <li>No computador com Windows, abra a loja de aplicativos, chamada <strong>Microsoft Store</strong>.</li>
+      <li>Procure por <code>Power BI Desktop</code>.</li>
+      <li>Clique em <strong>Instalar</strong> (ou <strong>Obter</strong>). O download é grande, então use uma boa conexão de internet.</li>
+      <li>Abra o programa. Se aparecer uma janela pedindo login ou apresentando novidades, você pode fechá-la: para usar nestas aulas, não é preciso entrar com conta.</li>
+    </ol>
+    <div class="caixa dica"><h4>Dica</h4><p>Se o seu computador for muito antigo ou tiver pouca memória, o programa pode ficar lento. Feche outros programas antes de usar.</p></div>
+    <div class="caixa pratique"><h4>Pratique</h4><p>Instale o Power BI Desktop e abra um relatório em branco. Se você não conseguir instalar, não tem problema: leia as próximas aulas para entender a ideia e tente em outro computador.</p></div>
+    <div class="caixa celular"><h4>Funciona no celular?</h4><p>Não. O Power BI Desktop só funciona em computador com Windows. O aplicativo de celular só mostra painéis que outra pessoa já criou.</p></div>
+    <p><a class="copiar" href="#pbi-instalar" aria-live="polite">Copiar link desta aula</a></p>
+  </article>
+
+  <article class="aula" id="pbi-tela">
+    <h3>Aula 2: Conhecendo a tela do Power BI</h3>
+    <p><span class="etiqueta">Nível: Básico</span></p>
+    <h4>Você vai aprender</h4>
+    <ul>
+      <li>Reconhecer as principais áreas da tela.</li>
+    </ul>
+    <h4>Explicação</h4>
+    <p>A tela do Power BI tem uma <strong>área de relatório</strong> grande no meio. É a "folha em branco" onde você coloca os gráficos. Do lado direito ficam dois painéis: <strong>Visualizações</strong> (os tipos de gráfico) e <strong>Dados</strong> (as colunas da sua planilha). Na faixa de cima ficam os botões.</p>
+    <p>No lado esquerdo há 3 ícones: <strong>Relatório</strong> (onde você monta os gráficos), <strong>Dados</strong> (onde vê a tabela) e <strong>Modelo</strong> (que não vamos usar agora).</p>
+    <h4>Passo a passo</h4>
+    <ol class="passos">
+      <li>Abra o Power BI Desktop. Feche as janelas de boas-vindas.</li>
+      <li>Olhe o grande espaço em branco no centro: é a área do relatório.</li>
+      <li>Olhe o painel <strong>Visualizações</strong>. Passe o mouse sobre os ícones para ver os nomes dos gráficos.</li>
+      <li>Olhe o painel <strong>Dados</strong>. Ele está vazio porque ainda não importamos nada.</li>
+      <li>Na faixa de cima, a aba <strong>Página Inicial</strong> tem os botões que mais usaremos, como <strong>Obter dados</strong>.</li>
+    </ol>
+    <div class="caixa dica"><h4>Dica</h4><p>Não tenha medo de clicar. Se algo der errado, aperte <code>Ctrl</code> + <code>Z</code> para desfazer.</p></div>
+    <div class="caixa pratique"><h4>Pratique</h4><p>Desenhe a tela do Power BI numa folha e marque as áreas: relatório, visualizações, dados e faixa de opções. Depois confira com o programa aberto.</p></div>
+    <div class="caixa celular"><h4>Funciona no celular?</h4><p>Não. A criação de relatórios só é possível no Power BI Desktop, no Windows.</p></div>
+    <p><a class="copiar" href="#pbi-tela" aria-live="polite">Copiar link desta aula</a></p>
+  </article>
+
+  <article class="aula" id="pbi-importar">
+    <h3>Aula 3: Importar uma planilha do Excel</h3>
+    <p><span class="etiqueta">Nível: Básico</span></p>
+    <h4>Você vai aprender</h4>
+    <ul>
+      <li>Trazer os dados de uma planilha para o Power BI.</li>
+    </ul>
+    <h4>Explicação</h4>
+    <p>O Power BI não guarda os números; ele os lê de uma fonte, como uma planilha. <strong>Importar</strong> é trazer esses dados para dentro dele. Para dar certo, a planilha precisa estar organizada: <strong>uma tabela, com os títulos na primeira linha</strong> e sem linhas vazias no meio.</p>
+    <p>Vamos usar a lista de vendas da <a href="excel.html#excel-dinamica">aula de tabela dinâmica</a> do Excel: colunas Data, Produto e Valor. Quanto mais linhas, melhor.</p>
+    <h4>Passo a passo</h4>
+    <ol class="passos">
+      <li>Salve a sua planilha do Excel e <strong>feche o Excel</strong>.</li>
+      <li>No Power BI, na aba <strong>Página Inicial</strong>, clique em <strong>Obter dados</strong> e depois em <strong>Pasta de Trabalho do Excel</strong>.</li>
+      <li>Escolha o arquivo e clique em <strong>Abrir</strong>.</li>
+      <li>Marque a folha (por exemplo, "Vendas") com um clique na caixinha. Veja a prévia dos dados à direita.</li>
+      <li>Clique em <strong>Carregar</strong>.</li>
+      <li>No painel <strong>Dados</strong>, à direita, aparece o nome da tabela. Clique na setinha para ver as colunas.</li>
+    </ol>
+    <div class="caixa dica"><h4>Dica</h4><p>Clique no ícone <strong>Dados</strong> (a tabelinha, na lateral esquerda) para conferir se os valores foram lidos certo. Se os números aparecerem como texto, confira o formato das colunas no Excel.</p></div>
+    <div class="caixa pratique"><h4>Pratique</h4><p>Monte no Excel uma planilha de 10 vendas (data, produto e valor) e importe para o Power BI. Confira se as 10 linhas apareceram.</p></div>
+    <div class="caixa celular"><h4>Funciona no celular?</h4><p>Não. É preciso o Power BI Desktop, no Windows.</p></div>
+    <p><a class="copiar" href="#pbi-importar" aria-live="polite">Copiar link desta aula</a></p>
+  </article>
+
+  <article class="aula" id="pbi-grafico">
+    <h3>Aula 4: Primeiro gráfico e salvar</h3>
+    <p><span class="etiqueta">Nível: Básico</span></p>
+    <h4>Você vai aprender</h4>
+    <ul>
+      <li>Criar um gráfico de colunas.</li>
+      <li>Salvar seu relatório.</li>
+    </ul>
+    <h4>Explicação</h4>
+    <p>No Power BI, para criar um gráfico você escolhe <strong>o que mostrar</strong> e <strong>o que comparar</strong>. Exemplo: mostrar o <em>valor</em> das vendas e comparar por <em>produto</em>.</p>
+    <h4>Passo a passo</h4>
+    <ol class="passos">
+      <li>No painel <strong>Visualizações</strong>, clique no ícone de <strong>Gráfico de colunas agrupadas</strong>. Um quadro vazio aparece na área do relatório.</li>
+      <li>No painel <strong>Dados</strong>, marque a caixinha de <strong>Produto</strong> e a de <strong>Valor</strong>.</li>
+      <li>O gráfico mostra o total vendido de cada produto.</li>
+      <li>Arraste os cantos do gráfico para deixá-lo maior.</li>
+      <li>Clique em <strong>Arquivo</strong> e depois em <strong>Salvar</strong>. Dê um nome como <code>vendas</code>. O arquivo fica com a extensão <code>.pbix</code>.</li>
+    </ol>
+    <div class="caixa dica"><h4>Dica</h4><p>Aperte em <strong>Salvar</strong> de vez em quando. O Power BI não salva sozinho.</p></div>
+    <div class="caixa pratique"><h4>Pratique</h4><p>Crie um gráfico que mostre o total vendido por produto. Depois, tente criar outro mostrando o total por data. Salve o arquivo.</p></div>
+    <div class="caixa celular"><h4>Funciona no celular?</h4><p>Não para criar. Mas, se o relatório for publicado por quem tem uma conta de trabalho ou escola, dá para ver no aplicativo do celular.</p></div>
+    <p><a class="copiar" href="#pbi-grafico" aria-live="polite">Copiar link desta aula</a></p>
+  </article>
+
+  <h2>Nível Intermediário</h2>
+
+  <article class="aula" id="pbi-cartoes">
+    <h3>Aula 5: Cartões e tipos de gráfico</h3>
+    <p><span class="etiqueta">Nível: Intermediário</span></p>
+    <h4>Você vai aprender</h4>
+    <ul>
+      <li>Mostrar um número grande em destaque.</li>
+      <li>Escolher o tipo de gráfico certo para cada pergunta.</li>
+    </ul>
+    <h4>Explicação</h4>
+    <p>O <strong>cartão</strong> mostra um único número grande, como o total vendido. Cada tipo de gráfico responde a uma pergunta diferente:</p>
+    <ul>
+      <li><strong>Colunas ou barras:</strong> "Quem vendeu mais?" (comparar itens).</li>
+      <li><strong>Linhas:</strong> "Como foi ao longo do tempo?" (evolução).</li>
+      <li><strong>Pizza ou rosca:</strong> "Qual a fatia de cada parte?" Use com poucas partes (até 4 ou 5).</li>
+      <li><strong>Tabela:</strong> quando você precisa dos números exatos.</li>
+    </ul>
+    <h4>Passo a passo</h4>
+    <ol class="passos">
+      <li>Clique em um espaço vazio da tela, para não alterar o gráfico anterior.</li>
+      <li>No painel <strong>Visualizações</strong>, escolha <strong>Cartão</strong>. No painel <strong>Dados</strong>, marque <strong>Valor</strong>. Você vê o total geral.</li>
+      <li>Clique em outro espaço vazio. Escolha <strong>Gráfico de linhas</strong>. Marque <strong>Data</strong> e <strong>Valor</strong>. Você vê a evolução das vendas.</li>
+      <li>Clique em outro espaço e escolha <strong>Gráfico de rosca</strong>. Marque <strong>Produto</strong> e <strong>Valor</strong>. Você vê a fatia de cada produto.</li>
+    </ol>
+    <div class="caixa dica"><h4>Dica</h4><p>Se o gráfico escolhido deixa a leitura difícil, troque o tipo. Basta clicar no gráfico e escolher outro ícone em Visualizações.</p></div>
+    <div class="caixa pratique"><h4>Pratique</h4><p>Com a mesma planilha, crie 1 cartão, 1 gráfico de linhas e 1 de rosca. Para cada um, escreva em uma frase que pergunta ele responde.</p></div>
+    <div class="caixa celular"><h4>Funciona no celular?</h4><p>Não. É preciso o Power BI Desktop, no Windows.</p></div>
+    <p><a class="copiar" href="#pbi-cartoes" aria-live="polite">Copiar link desta aula</a></p>
+  </article>
+
+  <article class="aula" id="pbi-filtros">
+    <h3>Aula 6: Filtros e segmentações</h3>
+    <p><span class="etiqueta">Nível: Intermediário</span></p>
+    <h4>Você vai aprender</h4>
+    <ul>
+      <li>Mostrar só uma parte dos dados.</li>
+      <li>Criar botões para filtrar com um clique.</li>
+    </ul>
+    <h4>Explicação</h4>
+    <p><strong>Filtrar</strong> é mostrar só o que interessa. A <strong>segmentação</strong> (ou <em>slicer</em>) é uma lista de opções na tela. Quando você clica em uma, todos os gráficos mudam juntos.</p>
+    <h4>Passo a passo</h4>
+    <ol class="passos">
+      <li>Clique em um espaço vazio do relatório.</li>
+      <li>No painel <strong>Visualizações</strong>, escolha <strong>Segmentação de Dados</strong>.</li>
+      <li>No painel <strong>Dados</strong>, marque <strong>Produto</strong>. Aparece uma lista com os produtos.</li>
+      <li>Clique em um produto da lista. Os outros gráficos passam a mostrar só aquele produto.</li>
+      <li>Para voltar a ver tudo, clique de novo no item escolhido ou use o ícone de borracha da segmentação.</li>
+    </ol>
+    <div class="caixa dica"><h4>Dica</h4><p>Para escolher mais de um item, segure a tecla <code>Ctrl</code> e clique nos itens desejados.</p></div>
+    <div class="caixa pratique"><h4>Pratique</h4><p>Crie uma segmentação por produto e outra por data. Teste combinações: "o brigadeiro em março", por exemplo.</p></div>
+    <div class="caixa celular"><h4>Funciona no celular?</h4><p>Não para criar. No aplicativo de celular, quem vê um relatório publicado consegue clicar nas segmentações.</p></div>
+    <p><a class="copiar" href="#pbi-filtros" aria-live="polite">Copiar link desta aula</a></p>
+  </article>
+
+  <article class="aula" id="pbi-painel">
+    <h3>Aula 7: Montar um painel simples de vendas</h3>
+    <p><span class="etiqueta">Nível: Intermediário</span></p>
+    <h4>Você vai aprender</h4>
+    <ul>
+      <li>Reunir cartão, gráficos e filtros em uma tela organizada.</li>
+    </ul>
+    <h4>Explicação</h4>
+    <p>Um bom painel responde às perguntas do negócio em uma tela só. Para um painel de vendas, as perguntas são: <strong>Quanto vendi? O que vende mais? Como foi ao longo do tempo?</strong> Use o que você aprendeu nas aulas anteriores.</p>
+    <h4>Passo a passo</h4>
+    <ol class="passos">
+      <li>No alto da tela, coloque o <strong>cartão</strong> com o total de vendas.</li>
+      <li>Abaixo, à esquerda, coloque o <strong>gráfico de colunas</strong> com as vendas por produto.</li>
+      <li>Abaixo, à direita, coloque o <strong>gráfico de linhas</strong> com as vendas por data.</li>
+      <li>Em um dos lados, coloque a <strong>segmentação</strong> por produto.</li>
+      <li>Dê um título a cada gráfico: clique nele, abra o painel de formatação (ícone de pincel) e escreva um título claro, como <code>Vendas por produto (R$)</code>.</li>
+      <li>Alinhe tudo: arraste os gráficos até as bordas combinarem e deixe espaços iguais entre eles.</li>
+      <li>Salve o arquivo.</li>
+    </ol>
+    <div class="caixa dica"><h4>Dica</h4><p>Menos é mais. 3 ou 4 elementos bem organizados valem mais do que 10 gráficos amontoados.</p></div>
+    <div class="caixa pratique"><h4>Pratique</h4><p>Monte o painel completo com os seus dados (ou com os dados de exemplo). Mostre para alguém e pergunte: "O que você descobriu olhando só para essa tela?"</p></div>
+    <div class="caixa celular"><h4>Funciona no celular?</h4><p>Não para criar. Você pode mostrar o painel para alguém no computador ou tirar uma captura de tela e enviar pelo WhatsApp.</p></div>
+    <p><a class="copiar" href="#pbi-painel" aria-live="polite">Copiar link desta aula</a></p>
+  </article>
+
+  <p><a class="btn btn-sec" href="trilhas.html">Voltar às trilhas</a></p>
+</main>
+<footer class="rodape">
+  <div class="wrap">
+    <p><strong>Conhecimento para Todos</strong> · Projeto de extensão de ADS · Jardim Betânia, Sorocaba/SP</p>
+    <p><a href="sobre.html">Sobre o projeto</a> · <a href="feedback.html">Dê sua opinião</a></p>
+  </div>
+</footer>
+</body>
+</html>

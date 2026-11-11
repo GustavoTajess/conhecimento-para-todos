@@ -55,3 +55,11 @@
 - A aula "Apresentação de um produto" ensina uma estrutura de 6 slides (capa, problema, solução, preços, como pedir, contato) que o aluno pode usar para vender.
 - Animações entram só no nível Intermediário e com o aviso de usar pouco, para evitar apresentações confusas.
 - A aula final ensina a exportar para PDF e imagem, porque o público costuma compartilhar tudo por WhatsApp.
+
+## 2026-11-11 | Etapa G: aulas de Power BI
+**O que foi feito:** página `powerbi.html` com 7 aulas (4 do nível Básico e 3 do Intermediário); card do Power BI em Trilhas virou link. Com isso, as 5 ferramentas e as 37 aulas estão no ar.
+
+**Decisões e por quê:**
+- O Power BI Desktop só roda em Windows e o aplicativo de celular só mostra painéis prontos. Isso foi dito com clareza no começo da página e em cada aula, para ninguém perder tempo tentando pelo celular.
+- As aulas reaproveitam a lista de vendas do Excel (aula de tabela dinâmica), para o aluno ligar uma trilha à outra.
+- Ficou como Intermediário um painel de vendas com cartão, dois gráficos e um filtro, que responde às três perguntas básicas de um pequeno negócio.

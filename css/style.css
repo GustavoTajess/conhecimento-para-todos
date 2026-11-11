@@ -116,7 +116,7 @@ html.alto .etiqueta { border-color: #fff; }
 .aula > :first-child { margin-top: 0; }
 .caixa { border: 1px solid var(--borda); border-left: .5rem solid var(--c, var(--verde)); border-radius: .5rem; padding: .7rem 1rem; margin: 1rem 0; background: var(--fundo); }
 .caixa > :first-child { margin-top: 0; } .caixa > :last-child { margin-bottom: 0; }
-.caixa h4 { margin: 0 0 .3rem; }
+.caixa h3, .caixa h4 { margin: 0 0 .3rem; font-size: 1.05rem; }
 .dica { --c: #B7791F; } .pratique { --c: var(--laranja); } .celular { --c: #2B579A; }
 html.alto .caixa { --c: #FFE600; }
 .copiar { display: inline-block; min-height: 44px; padding: .6rem 0; font-size: .95rem; }
