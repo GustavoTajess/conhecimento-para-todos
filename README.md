@@ -4,6 +4,8 @@ Site estático com **37 aulas gratuitas** de Excel, Power BI, Word, PowerPoint e
 
 É a intervenção de um projeto de extensão do curso de ADS (itinerário Economia Sustentável), de autoria de Gustavo. Trabalha os ODS 4, 8 e 10.
 
+**Site no ar:** https://gustavotajess.github.io/conhecimento-para-todos/
+
 ## O que tem no site
 
 | Página | Conteúdo |

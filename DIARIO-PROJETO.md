@@ -109,3 +109,7 @@
 **O que foi feito:** o botão da página Feedback passou a apontar para o Google Forms real do projeto (abre em nova aba, com `target="_blank"` e `rel="noopener"`), e o texto provisório que existia no lugar foi removido de todos os arquivos. Foi feita uma revisão visual final das 10 páginas em 360, 768 e 1280 px, com capturas da página inteira.
 
 **O que a revisão conferiu:** sem rolagem horizontal; topo e menu sem sobreposição (logo, A−, A+, Alto contraste e hambúrguer); rodapé com mascote, onda e links alinhados e com área de toque de 44 px; mascote do rodapé sem encostar em nenhum texto ou botão; cards, caixas das aulas, trilha de bolinhas e ilustrações sem cortes. Nenhum ajuste de layout foi necessário nesta rodada.
+
+**Publicação:** o repositório público `conhecimento-para-todos` foi criado no GitHub (usuário GustavoTajess) e o site foi publicado no GitHub Pages (branch `main`, pasta raiz). Endereço: https://gustavotajess.github.io/conhecimento-para-todos/
+- Antes do envio, os commits foram reescritos com o e-mail privado do GitHub (formato noreply), para o e-mail pessoal não ficar público no histórico.
+- Teste no endereço público (celular, 360 px): CSS, JavaScript e desenhos carregam; os botões A+ e Alto contraste funcionam e ficam salvos; o botão do formulário abre o Google Forms em nova aba; o download da planilha entrega um .xlsx válido de 47 KB; a página 404 personalizada aparece; sem rolagem horizontal.
