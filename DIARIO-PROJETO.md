@@ -39,3 +39,11 @@
 - Canva vem antes de Word, PowerPoint e Power BI na ordem de construção porque é o mais usado pelo celular e ajuda direto na divulgação de quem vende.
 - As aulas mostram as limitações do plano gratuito (modelos com coroa, fundo transparente do logo) para evitar frustração.
 - Os nomes de botões do Canva mudam com o tempo. Por isso as aulas descrevem a ideia ("menu lateral", "Compartilhar") e avisam que os nomes podem variar. Convém conferir as aulas no Canva real antes da divulgação.
+
+## 2026-11-11 | Etapa E: aulas de Word
+**O que foi feito:** página `word.html` com 7 aulas (4 do nível Básico e 3 do Intermediário); card do Word em Trilhas virou link.
+
+**Decisões e por quê:**
+- As aulas intermediárias (currículo, orçamento, panfleto) resolvem problemas reais de quem busca renda extra ou emprego.
+- A aula do currículo mostra como valorizar quem nunca teve carteira assinada (trabalhos informais, voluntariado, cursos feitos neste site), porque esse é o caso de muitos do público.
+- Onde o Word no celular é pouco prático (orçamento e panfleto), a aula avisa e sugere o computador ou o Canva, em vez de prometer o que não funciona bem.
