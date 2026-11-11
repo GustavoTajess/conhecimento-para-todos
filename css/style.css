@@ -211,7 +211,7 @@ html.alto .etiqueta { border-color: #fff; background: #000; }
 .caminho li { position: relative; padding-left: 3.5rem; max-width: none; }
 .caminho li::before { content: ""; position: absolute; left: 1.2rem; top: 50%; height: 100%; width: 0; border-left: 4px dotted var(--borda); }
 .caminho li:last-child::before { display: none; }
-.caminho a { display: flex; align-items: center; min-height: 48px; padding: .1rem 0; font-weight: 600; text-decoration: none; color: var(--texto); }
+.caminho a { display: flex; align-items: center; min-height: 60px; padding: .1rem 0; font-weight: 600; text-decoration: none; color: var(--texto); }
 .caminho a:hover .nome { text-decoration: underline; }
 .bola { position: absolute; z-index: 1; left: 0; top: 50%; transform: translateY(-50%); width: 2.5rem; height: 2.5rem; border-radius: 50%; display: grid; place-items: center;
   background: var(--cartao); color: var(--c, var(--verde)); border: 3px solid var(--c, var(--verde)); font-weight: 800; }

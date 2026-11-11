@@ -69,43 +69,59 @@
     </nav>
   </div>
 </header>
-<main id="conteudo" class="wrap">
-  <h1>Trilhas de aprendizado</h1>
-  <p class="lead">Uma trilha é um caminho de aulas sobre uma ferramenta. São 37 aulas no total, todas gratuitas.</p>
-  <p>Sem saber por onde começar? Se você quer divulgar algo que vende, comece pelo <strong>Canva</strong>. Se quer organizar o dinheiro, comece pelo <strong>Excel</strong>.</p>
+<main id="conteudo">
+  <section class="capa">
+    <div class="wrap capa-in">
+      <div>
+        <span class="adesivo">37 aulas grátis</span>
+        <h1>Trilhas de <span class="marca marca-verde">aprendizado</span></h1>
+        <p class="lead">Uma trilha é um caminho de aulas sobre uma ferramenta. Dentro de cada uma, você vê um mapa com bolinhas numeradas e marca as aulas que já concluiu.</p>
+        <p>Sem saber por onde começar? Se você quer divulgar algo que vende, comece pelo <strong>Canva</strong>. Se quer organizar o dinheiro, comece pelo <strong>Excel</strong>.</p>
+      </div>
+      <div class="capa-arte"><svg class="mascote" viewBox="0 0 130 150" aria-hidden="true"><use href="#mascote-aponta"/></svg></div>
+    </div>
+    <svg class="onda-b" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><use href="#onda"/></svg>
+  </section>
 
-  <ul class="grade">
-    <li class="cartao">
-      <span class="selo excel" aria-hidden="true">X</span>
-      <h2><a class="cartao-link" href="excel.html">Excel</a></h2>
-      <p>Planilhas para controlar gastos, vendas e preços.</p>
-      <p class="suave">Básico e Intermediário · 9 aulas</p>
-    </li>
-    <li class="cartao">
-      <span class="selo powerbi" aria-hidden="true">BI</span>
-      <h2><a class="cartao-link" href="powerbi.html">Power BI</a></h2>
-      <p>Transforme números em painéis fáceis de entender. Funciona em computador com Windows.</p>
-      <p class="suave">Básico e Intermediário · 7 aulas</p>
-    </li>
-    <li class="cartao">
-      <span class="selo word" aria-hidden="true">W</span>
-      <h2><a class="cartao-link" href="word.html">Word</a></h2>
-      <p>Currículo, orçamento, panfleto e cardápio.</p>
-      <p class="suave">Básico e Intermediário · 7 aulas</p>
-    </li>
-    <li class="cartao">
-      <span class="selo powerpoint" aria-hidden="true">P</span>
-      <h2><a class="cartao-link" href="powerpoint.html">PowerPoint</a></h2>
-      <p>Apresente seu produto ou serviço de um jeito claro.</p>
-      <p class="suave">Básico e Intermediário · 7 aulas</p>
-    </li>
-    <li class="cartao">
-      <span class="selo canva" aria-hidden="true">C</span>
-      <h2><a class="cartao-link" href="canva.html">Canva</a></h2>
-      <p>Posts, logos e cardápios bonitos, até pelo celular.</p>
-      <p class="suave">Básico e Intermediário · 7 aulas</p>
-    </li>
-  </ul>
+  <div class="wrap conteudo">
+    <ul class="cards-trilha cinco">
+      <li class="card-trilha excel">
+        <svg class="ic-ferr deco" viewBox="0 0 64 64" aria-hidden="true"><use href="#ferr-excel"/></svg>
+        <h2><a class="cartao-link" href="excel.html">Excel</a></h2>
+        <p>Planilhas para controlar gastos, vendas e preços.</p>
+        <p class="meta"><span class="etiqueta">9 aulas</span><span class="etiqueta lv-b">Básico</span><span class="etiqueta lv-i">Intermediário</span></p>
+        <p class="prog-card" data-ferr="excel" data-total="9"></p>
+      </li>
+      <li class="card-trilha powerbi">
+        <svg class="ic-ferr deco" viewBox="0 0 64 64" aria-hidden="true"><use href="#ferr-powerbi"/></svg>
+        <h2><a class="cartao-link" href="powerbi.html">Power BI</a></h2>
+        <p>Transforme números em painéis fáceis de entender. Só funciona em computador com Windows.</p>
+        <p class="meta"><span class="etiqueta">7 aulas</span><span class="etiqueta lv-b">Básico</span><span class="etiqueta lv-i">Intermediário</span></p>
+        <p class="prog-card" data-ferr="powerbi" data-total="7"></p>
+      </li>
+      <li class="card-trilha word">
+        <svg class="ic-ferr deco" viewBox="0 0 64 64" aria-hidden="true"><use href="#ferr-word"/></svg>
+        <h2><a class="cartao-link" href="word.html">Word</a></h2>
+        <p>Currículo, orçamento, panfleto e cardápio.</p>
+        <p class="meta"><span class="etiqueta">7 aulas</span><span class="etiqueta lv-b">Básico</span><span class="etiqueta lv-i">Intermediário</span></p>
+        <p class="prog-card" data-ferr="word" data-total="7"></p>
+      </li>
+      <li class="card-trilha powerpoint">
+        <svg class="ic-ferr deco" viewBox="0 0 64 64" aria-hidden="true"><use href="#ferr-powerpoint"/></svg>
+        <h2><a class="cartao-link" href="powerpoint.html">PowerPoint</a></h2>
+        <p>Apresente seu produto ou serviço de um jeito claro.</p>
+        <p class="meta"><span class="etiqueta">7 aulas</span><span class="etiqueta lv-b">Básico</span><span class="etiqueta lv-i">Intermediário</span></p>
+        <p class="prog-card" data-ferr="powerpoint" data-total="7"></p>
+      </li>
+      <li class="card-trilha canva">
+        <svg class="ic-ferr deco" viewBox="0 0 64 64" aria-hidden="true"><use href="#ferr-canva"/></svg>
+        <h2><a class="cartao-link" href="canva.html">Canva</a></h2>
+        <p>Posts, logos e cardápios bonitos, até pelo celular.</p>
+        <p class="meta"><span class="etiqueta">7 aulas</span><span class="etiqueta lv-b">Básico</span><span class="etiqueta lv-i">Intermediário</span></p>
+        <p class="prog-card" data-ferr="canva" data-total="7"></p>
+      </li>
+    </ul>
+  </div>
 </main>
 <footer class="rodape">
   <svg class="onda" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><use href="#onda"/></svg>

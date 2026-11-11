@@ -69,34 +69,46 @@
     </nav>
   </div>
 </header>
-<main id="conteudo" class="wrap">
-  <h1>Power BI: aulas grátis</h1>
-  <p class="lead">O Power BI transforma planilhas cheias de números em gráficos fáceis de entender. Um conjunto de gráficos na mesma tela é chamado de <strong>painel</strong> (ou <em>dashboard</em>).</p>
+<main id="conteudo" class="ferr powerbi" data-ferr="powerbi">
+  <section class="capa ferr powerbi">
+    <div class="wrap capa-in">
+      <div class="capa-texto">
+        <span class="adesivo">7 aulas · Básico e Intermediário</span>
+        <h1>Power BI: aulas grátis</h1>
+        <p class="lead">O Power BI transforma planilhas cheias de números em gráficos fáceis de entender. Um conjunto de gráficos na mesma tela é chamado de <strong>painel</strong> (ou <em>dashboard</em>).</p>
   <div class="caixa celular">
     <p><strong>Importante: só funciona em computador com Windows</strong></p>
     <p>O programa que usamos nestas aulas, o <strong>Power BI Desktop</strong>, é gratuito, mas só roda em computador com Windows. No celular existe um aplicativo do Power BI, mas ele serve apenas para <em>ver</em> painéis prontos. Por isso, em todas as aulas você verá que o celular não serve para criar.</p>
   </div>
   <p>Se você já fez a <a href="excel.html">trilha de Excel</a>, vai se sentir em casa: o Power BI usa tabelas e números parecidos.</p>
   <p>Os nomes dos botões podem mudar um pouco quando o programa é atualizado, mas a ideia é a mesma.</p>
+      </div>
+      <div class="capa-arte"><svg viewBox="0 0 220 180" aria-hidden="true"><circle cx="40" cy="42" r="28" fill="#fff" opacity=".16"/><circle cx="188" cy="142" r="20" fill="#fff" opacity=".2"/>
+<path d="M14 158q10-14 20 0t20 0" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".6"/>
+<g class="flutua"><use href="#ferr-powerbi" x="40" y="20" width="132" height="132" transform="rotate(-6 106 86)"/></g>
+<path d="M176 24l4 9 9 4-9 4-4 9-4-9-9-4 9-4z" fill="#FFD98A"/><path d="M30 104l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#FFD98A" opacity=".85"/></svg></div>
+    </div>
+    <svg class="onda-b" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><use href="#onda"/></svg>
+  </section>
+  <div class="wrap conteudo">
+    <nav class="trilha" aria-label="Aulas de Power BI">
+      <h2>Sua trilha de aulas</h2>
+    <p class="trilha-nivel"><span class="etiqueta lv-b">Nível Básico</span></p>
+    <ol class="caminho">
+        <li><a href="#pbi-instalar"><span class="bola" aria-hidden="true">1</span><span class="nome"><span class="sr-only">Aula 1: </span>O que é o Power BI e como instalar de graça</span></a></li>
+        <li><a href="#pbi-tela"><span class="bola" aria-hidden="true">2</span><span class="nome"><span class="sr-only">Aula 2: </span>Conhecendo a tela do Power BI</span></a></li>
+        <li><a href="#pbi-importar"><span class="bola" aria-hidden="true">3</span><span class="nome"><span class="sr-only">Aula 3: </span>Importar uma planilha do Excel</span></a></li>
+        <li><a href="#pbi-grafico"><span class="bola" aria-hidden="true">4</span><span class="nome"><span class="sr-only">Aula 4: </span>Primeiro gráfico e salvar</span></a></li>
+    </ol>
+    <p class="trilha-nivel"><span class="etiqueta lv-i">Nível Intermediário</span></p>
+    <ol class="caminho">
+        <li><a href="#pbi-cartoes"><span class="bola" aria-hidden="true">5</span><span class="nome"><span class="sr-only">Aula 5: </span>Cartões e tipos de gráfico</span></a></li>
+        <li><a href="#pbi-filtros"><span class="bola" aria-hidden="true">6</span><span class="nome"><span class="sr-only">Aula 6: </span>Filtros e segmentações</span></a></li>
+        <li><a href="#pbi-painel"><span class="bola" aria-hidden="true">7</span><span class="nome"><span class="sr-only">Aula 7: </span>Montar um painel simples de vendas</span></a></li>
+    </ol>
+    </nav>
 
-  <nav class="sumario" aria-label="Aulas de Power BI">
-    <h2>Nesta página</h2>
-    <h3>Básico</h3>
-    <ul>
-      <li><a href="#pbi-instalar">1. O que é e como instalar de graça</a></li>
-      <li><a href="#pbi-tela">2. Conhecendo a tela</a></li>
-      <li><a href="#pbi-importar">3. Importar uma planilha do Excel</a></li>
-      <li><a href="#pbi-grafico">4. Primeiro gráfico e salvar</a></li>
-    </ul>
-    <h3>Intermediário</h3>
-    <ul>
-      <li><a href="#pbi-cartoes">5. Cartões e tipos de gráfico</a></li>
-      <li><a href="#pbi-filtros">6. Filtros e segmentações</a></li>
-      <li><a href="#pbi-painel">7. Montar um painel simples de vendas</a></li>
-    </ul>
-  </nav>
-
-  <h2>Nível Básico</h2>
+    <h2>Nível Básico</h2>
 
   <article class="aula" id="pbi-instalar">
     <h3>Aula 1: O que é o Power BI e como instalar de graça</h3>
@@ -131,6 +143,15 @@
     <h4>Explicação</h4>
     <p>A tela do Power BI tem uma <strong>área de relatório</strong> grande no meio. É a "folha em branco" onde você coloca os gráficos. Do lado direito ficam dois painéis: <strong>Visualizações</strong> (os tipos de gráfico) e <strong>Dados</strong> (as colunas da sua planilha). Na faixa de cima ficam os botões.</p>
     <p>No lado esquerdo há 3 ícones: <strong>Relatório</strong> (onde você monta os gráficos), <strong>Dados</strong> (onde vê a tabela) e <strong>Modelo</strong> (que não vamos usar agora).</p>
+    <figure class="tela"><svg viewBox="0 0 320 192" role="img" aria-label="Desenho da tela do Power BI Desktop: à esquerda os ícones Relatório, Dados e Modelo; no centro a área do relatório, ainda vazia; à direita os painéis Visualizações e Dados." font-family="system-ui,Segoe UI,Arial,sans-serif"><rect width="320" height="192" fill="#fff"/>
+<rect width="320" height="26" fill="#8A6100"/><text x="10" y="18" font-size="12" font-weight="700" fill="#fff" font-size="13">Power BI Desktop</text>
+<rect x="0" y="26" width="66" height="166" fill="#F3EEDD"/>
+<rect x="8" y="38" width="14" height="14" rx="3" fill="#8A6100" opacity="1"/><text x="27" y="50" font-size="12" fill="#1F2328" font-size="11" font-weight="700">Relatório</text><rect x="8" y="72" width="14" height="14" rx="3" fill="#8A6100" opacity="0.45"/><text x="27" y="84" font-size="12" fill="#1F2328" font-size="11">Dados</text><rect x="8" y="106" width="14" height="14" rx="3" fill="#8A6100" opacity="0.45"/><text x="27" y="118" font-size="12" fill="#1F2328" font-size="11">Modelo</text>
+<rect x="66" y="26" width="150" height="166" fill="#fff"/><rect x="78" y="38" width="126" height="142" rx="4" fill="none" stroke="#B9AE9A" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="141" y="106" font-size="12" text-anchor="middle" font-weight="700" fill="#4A4640" font-size="12">Área do relatório</text><text x="141" y="122" font-size="12" text-anchor="middle" fill="#4A4640" font-size="11">(ainda vazia)</text>
+<rect x="216" y="26" width="104" height="82" fill="#F7F4EA" stroke="#E2D3B8"/><text x="224" y="42" font-size="12" font-weight="700" fill="#1F2328" font-size="11">Visualizações</text>
+<g fill="#8A6100" opacity=".75"><rect x="224" y="52" width="16" height="14" rx="2"/><rect x="246" y="52" width="16" height="14" rx="2"/><rect x="268" y="52" width="16" height="14" rx="2"/><rect x="224" y="72" width="16" height="14" rx="2"/><rect x="246" y="72" width="16" height="14" rx="2"/><rect x="268" y="72" width="16" height="14" rx="2"/></g>
+<rect x="216" y="108" width="104" height="84" fill="#fff" stroke="#E2D3B8"/><text x="224" y="124" font-size="12" font-weight="700" fill="#1F2328" font-size="11">Dados</text><text x="224" y="146" font-size="12" fill="#4A4640" font-size="11">vazio por enquanto</text></svg></figure>
     <h4>Passo a passo</h4>
     <ol class="passos">
       <li>Abra o Power BI Desktop. Feche as janelas de boas-vindas.</li>
@@ -274,7 +295,8 @@
     <p><a class="copiar" href="#pbi-painel" aria-live="polite">Copiar link desta aula</a></p>
   </article>
 
-  <p><a class="btn btn-sec" href="trilhas.html">Voltar às trilhas</a></p>
+    <p><a class="btn btn-sec" href="trilhas.html">Voltar às trilhas</a></p>
+  </div>
 </main>
 <footer class="rodape">
   <svg class="onda" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><use href="#onda"/></svg>

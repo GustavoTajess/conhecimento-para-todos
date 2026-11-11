@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
@@ -69,31 +69,43 @@
     </nav>
   </div>
 </header>
-<main id="conteudo" class="wrap">
-  <h1>Excel: aulas grátis</h1>
-  <p class="lead">O Excel é um programa de planilhas. Com ele você organiza gastos, vendas e preços e faz as contas sem usar calculadora.</p>
+<main id="conteudo" class="ferr excel" data-ferr="excel">
+  <section class="capa ferr excel">
+    <div class="wrap capa-in">
+      <div class="capa-texto">
+        <span class="adesivo">9 aulas · Básico e Intermediário</span>
+        <h1>Excel: aulas grátis</h1>
+        <p class="lead">O Excel é um programa de planilhas. Com ele você organiza gastos, vendas e preços e faz as contas sem usar calculadora.</p>
   <p>Para usar de graça: abra <strong>office.com</strong> no navegador, entre com uma conta Microsoft e escolha Excel. No celular, instale o aplicativo Excel.</p>
+      </div>
+      <div class="capa-arte"><svg viewBox="0 0 220 180" aria-hidden="true"><circle cx="40" cy="42" r="28" fill="#fff" opacity=".16"/><circle cx="188" cy="142" r="20" fill="#fff" opacity=".2"/>
+<path d="M14 158q10-14 20 0t20 0" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".6"/>
+<g class="flutua"><use href="#ferr-excel" x="40" y="20" width="132" height="132" transform="rotate(-6 106 86)"/></g>
+<path d="M176 24l4 9 9 4-9 4-4 9-4-9-9-4 9-4z" fill="#FFD98A"/><path d="M30 104l3 7 7 3-7 3-3 7-3-7-7-3 7-3z" fill="#FFD98A" opacity=".85"/></svg></div>
+    </div>
+    <svg class="onda-b" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><use href="#onda"/></svg>
+  </section>
+  <div class="wrap conteudo">
+    <nav class="trilha" aria-label="Aulas de Excel">
+      <h2>Sua trilha de aulas</h2>
+    <p class="trilha-nivel"><span class="etiqueta lv-b">Nível Básico</span></p>
+    <ol class="caminho">
+        <li><a href="#excel-tela"><span class="bola" aria-hidden="true">1</span><span class="nome"><span class="sr-only">Aula 1: </span>Conhecendo a tela do Excel</span></a></li>
+        <li><a href="#excel-digitar"><span class="bola" aria-hidden="true">2</span><span class="nome"><span class="sr-only">Aula 2: </span>Digitar e formatar dados</span></a></li>
+        <li><a href="#excel-contas"><span class="bola" aria-hidden="true">3</span><span class="nome"><span class="sr-only">Aula 3: </span>Primeiras contas</span></a></li>
+        <li><a href="#excel-salvar"><span class="bola" aria-hidden="true">4</span><span class="nome"><span class="sr-only">Aula 4: </span>Salvar, abrir e gerar PDF</span></a></li>
+    </ol>
+    <p class="trilha-nivel"><span class="etiqueta lv-i">Nível Intermediário</span></p>
+    <ol class="caminho">
+        <li><a href="#excel-soma"><span class="bola" aria-hidden="true">5</span><span class="nome"><span class="sr-only">Aula 5: </span>SOMA e MÉDIA</span></a></li>
+        <li><a href="#excel-se"><span class="bola" aria-hidden="true">6</span><span class="nome"><span class="sr-only">Aula 6: </span>Função SE</span></a></li>
+        <li><a href="#excel-procv"><span class="bola" aria-hidden="true">7</span><span class="nome"><span class="sr-only">Aula 7: </span>PROCV para achar preços</span></a></li>
+        <li><a href="#excel-graficos"><span class="bola" aria-hidden="true">8</span><span class="nome"><span class="sr-only">Aula 8: </span>Gráficos</span></a></li>
+        <li><a href="#excel-dinamica"><span class="bola" aria-hidden="true">9</span><span class="nome"><span class="sr-only">Aula 9: </span>Tabela dinâmica</span></a></li>
+    </ol>
+    </nav>
 
-  <nav class="sumario" aria-label="Aulas de Excel">
-    <h2>Nesta página</h2>
-    <h3>Básico</h3>
-    <ul>
-      <li><a href="#excel-tela">1. Conhecendo a tela</a></li>
-      <li><a href="#excel-digitar">2. Digitar e formatar dados</a></li>
-      <li><a href="#excel-contas">3. Primeiras contas</a></li>
-      <li><a href="#excel-salvar">4. Salvar, abrir e gerar PDF</a></li>
-    </ul>
-    <h3>Intermediário</h3>
-    <ul>
-      <li><a href="#excel-soma">5. SOMA e MÉDIA</a></li>
-      <li><a href="#excel-se">6. Função SE</a></li>
-      <li><a href="#excel-procv">7. PROCV para achar preços</a></li>
-      <li><a href="#excel-graficos">8. Gráficos</a></li>
-      <li><a href="#excel-dinamica">9. Tabela dinâmica</a></li>
-    </ul>
-  </nav>
-
-  <h2>Nível Básico</h2>
+    <h2>Nível Básico</h2>
 
   <article class="aula" id="excel-tela">
     <h3>Aula 1: Conhecendo a tela do Excel</h3>
@@ -106,6 +118,15 @@
     <h4>Explicação</h4>
     <p>A planilha parece uma folha quadriculada. Cada quadradinho é uma <strong>célula</strong>. As <strong>colunas</strong> ficam de pé e têm letras (A, B, C). As <strong>linhas</strong> ficam deitadas e têm números (1, 2, 3).</p>
     <p>O nome de uma célula junta a letra e o número. A célula que está na coluna B e na linha 3 se chama <strong>B3</strong>. Esse nome é o <strong>endereço</strong> da célula.</p>
+    <figure class="tela"><svg viewBox="0 0 320 200" role="img" aria-label="Desenho da tela do Excel. No alto, a Caixa de Nome mostra A1 e ao lado fica a Barra de Fórmulas. Abaixo, as colunas têm letras (A, B, C) e as linhas têm números (1, 2, 3). A célula A1 está destacada." font-family="system-ui,Segoe UI,Arial,sans-serif"><rect width="320" height="200" fill="#fff"/>
+<rect width="320" height="26" fill="#1D6F42"/><text x="10" y="18" font-size="12" font-weight="700" fill="#fff" font-size="13">Excel</text>
+<rect x="8" y="33" width="52" height="22" rx="4" fill="#fff" stroke="#1D6F42" stroke-width="2.500"/><text x="34" y="49" font-size="12" font-weight="700" text-anchor="middle" fill="#1F2328" font-size="13">A1</text>
+<rect x="66" y="33" width="246" height="22" rx="4" fill="#F4F7F5" stroke="#9AA9A2"/><text x="74" y="49" font-size="12" fill="#4A4640">Barra de Fórmulas</text>
+<rect x="34" y="62" width="280" height="20" fill="#E4EEE9"/><rect x="8" y="62" width="26" height="130" fill="#E4EEE9"/>
+<path d="M8 82H314M8 104H314M8 126H314M8 148H314M8 170H314M8 192H314M34 62V192M90 62V192M146 62V192M202 62V192M258 62V192M314 62V192" stroke="#B9C7C0" stroke-width="1.500" fill="none"/>
+<g font-size="12" font-weight="700" text-anchor="middle" fill="#2E3D36"><text x="62" y="76" font-size="12" >A</text><text x="118" y="76" font-size="12" >B</text><text x="174" y="76" font-size="12" >C</text><text x="230" y="76" font-size="12" >D</text><text x="286" y="76" font-size="12" >E</text></g><g font-size="12" font-weight="700" text-anchor="middle" fill="#2E3D36"><text x="21" y="97" font-size="12" >1</text><text x="21" y="119" font-size="12" >2</text><text x="21" y="141" font-size="12" >3</text><text x="21" y="163" font-size="12" >4</text><text x="21" y="185" font-size="12" >5</text></g>
+<rect x="34" y="82" width="56" height="22" fill="#1D6F42" fill-opacity=".14" stroke="#1D6F42" stroke-width="3"/>
+<text x="98" y="98" font-size="12" font-weight="700" fill="#B4441F">← você está na célula A1</text><text x="98" y="142" font-size="12" font-weight="700" fill="#B4441F">↑ colunas têm letras</text><text x="98" y="186" font-size="12" font-weight="700" fill="#B4441F">← linhas têm números</text></svg></figure>
     <h4>Passo a passo</h4>
     <ol class="passos">
       <li>Abra o Excel e escolha <strong>Pasta de trabalho em branco</strong>.</li>
@@ -220,6 +241,18 @@
       <tr><td>Quinta</td><td>R$ 10,00</td></tr>
       <tr><td>Sexta</td><td>R$ 20,00</td></tr>
     </table></div>
+    <figure class="tela"><svg viewBox="0 0 320 218" role="img" aria-label="Desenho de uma planilha com os gastos da semana na coluna B, de B2 a B6, e a fórmula igual a SOMA de B2 até B6 na célula B7, com o resultado R$ 65,50." font-family="system-ui,Segoe UI,Arial,sans-serif"><rect width="320" height="218" fill="#fff"/>
+<rect x="8" y="6" width="52" height="22" rx="4" fill="#fff" stroke="#1D6F42" stroke-width="2.500"/><text x="34" y="22" font-size="12" font-weight="700" text-anchor="middle" fill="#1F2328" font-size="13">B7</text>
+<rect x="66" y="6" width="246" height="22" rx="4" fill="#F4F7F5" stroke="#9AA9A2"/><text x="74" y="22" font-size="12" font-weight="700" fill="#1F2328" font-size="13">=SOMA(B2:B6)</text>
+<rect x="30" y="36" width="240" height="20" fill="#E4EEE9"/><rect x="8" y="36" width="22" height="154" fill="#E4EEE9"/>
+<path d="M8 56H270M8 78H270M8 100H270M8 122H270M8 144H270M8 166H270M8 188H270M30 36V188M150 36V188M270 36V188" stroke="#B9C7C0" stroke-width="1.500" fill="none"/>
+<g font-size="12" font-weight="700" text-anchor="middle" fill="#2E3D36"><text x="90" y="50" font-size="12" >A</text><text x="210" y="50" font-size="12" >B</text></g>
+<g font-size="12" font-weight="700" text-anchor="middle" fill="#2E3D36"><text x="19" y="71" font-size="12" >1</text><text x="19" y="93" font-size="12" >2</text><text x="19" y="115" font-size="12" >3</text><text x="19" y="137" font-size="12" >4</text><text x="19" y="159" font-size="12" >5</text><text x="19" y="181" font-size="12" >6</text><text x="19" y="203" font-size="12" >7</text></g>
+<g font-size="12" fill="#1F2328"><text x="36" y="71" font-size="12" font-weight="700">Dia</text><text x="36" y="93" font-size="12" >Segunda</text><text x="36" y="115" font-size="12" >Terça</text><text x="36" y="137" font-size="12" >Quarta</text><text x="36" y="159" font-size="12" >Quinta</text><text x="36" y="181" font-size="12" >Sexta</text><text x="36" y="203" font-size="12" font-weight="700">Total</text>
+<text x="156" y="71" font-size="12" font-weight="700">Gasto</text><text x="156" y="93" font-size="12" >R$ 12,00</text><text x="156" y="115" font-size="12" >R$ 8,50</text><text x="156" y="137" font-size="12" >R$ 15,00</text><text x="156" y="159" font-size="12" >R$ 10,00</text><text x="156" y="181" font-size="12" >R$ 20,00</text><text x="156" y="203" font-size="12" font-weight="700">R$ 65,50</text></g>
+<rect x="150" y="78" width="120" height="110" fill="#1D6F42" fill-opacity=".1" stroke="#1D6F42" stroke-width="2.500" stroke-dasharray="6 4"/>
+<rect x="150" y="166" width="120" height="22" fill="none" stroke="#B4441F" stroke-width="3.500"/>
+<text x="278" y="100" font-size="12" fill="#1D6F42" font-weight="700">← soma</text><text x="278" y="114" font-size="12" fill="#1D6F42" font-weight="700">B2 até B6</text><text x="278" y="182" font-size="12" font-weight="700" fill="#B4441F">← total</text></svg></figure>
     <h4>Passo a passo</h4>
     <ol class="passos">
       <li>Digite a tabela acima a partir da célula A1 (títulos na linha 1, dados nas linhas 2 a 6).</li>
@@ -343,7 +376,8 @@
     <p><a class="copiar" href="#excel-dinamica" aria-live="polite">Copiar link desta aula</a></p>
   </article>
 
-  <p><a class="btn btn-sec" href="trilhas.html">Voltar às trilhas</a></p>
+    <p><a class="btn btn-sec" href="trilhas.html">Voltar às trilhas</a></p>
+  </div>
 </main>
 <footer class="rodape">
   <svg class="onda" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><use href="#onda"/></svg>
