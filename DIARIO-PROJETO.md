@@ -10,7 +10,7 @@
 - Botões de aumentar a letra e de alto contraste, com a escolha salva no navegador: o público tem níveis diferentes de visão e de familiaridade com tecnologia.
 - Quando houve conflito entre beleza e leveza, a leveza venceu.
 - Total de 37 aulas planejadas (9 de Excel e 7 de cada uma das outras quatro ferramentas). Cards de ferramentas sem página ficam como "Em breve".
-- Link do Google Forms deixado como `LINK_DO_GOOGLE_FORMS`, em um único lugar (feedback.html), até o formulário ficar pronto.
+- Link do Google Forms deixado como texto provisório, em um único lugar (feedback.html), até o formulário ficar pronto. Depois foi trocado pelo endereço real (ver etapa K).
 - Os resultados do diagnóstico em Sobre estão como [PREENCHER]: ainda faltam os dados reais.
 
 ## 2026-11-11 | Etapa B: aulas de Excel
@@ -71,7 +71,7 @@
 
 **O que foi corrigido:** os links do índice de aulas e os títulos dos cards de trilhas tinham 37 a 38 px de altura, abaixo dos 44 px da meta de toque. Foram aumentados. Também foram corrigidos dois saltos de nível de título (h1 para h4, e h2 para h4) em Power BI e Kit.
 
-**Pendências para o Gustavo:** trocar `LINK_DO_GOOGLE_FORMS` em feedback.html; preencher os resultados do diagnóstico em sobre.html (`[PREENCHER]`); testar a planilha no Excel ou no Google Planilhas; conferir as aulas de Canva, Word, PowerPoint e Power BI nos programas reais, já que os nomes dos botões mudam com o tempo; testar o site em um celular de verdade.
+**Pendências para o Gustavo:** trocar o link provisório do formulário em feedback.html (feito na etapa K); preencher os resultados do diagnóstico em sobre.html (`[PREENCHER]`); testar a planilha no Excel ou no Google Planilhas; conferir as aulas de Canva, Word, PowerPoint e Power BI nos programas reais, já que os nomes dos botões mudam com o tempo; testar o site em um celular de verdade.
 
 ## 2026-11-11 | Etapa I: novo visual (mais bonito e detalhado, ainda leve)
 **O que foi feito:** o visual do site inteiro foi refeito, sem fotos, sem fontes e sem bibliotecas externas.
@@ -104,3 +104,8 @@
 - A planilha traz exemplos de março de 2026, e o Painel abre em "2026" e "Ano todo", então já mostra números de exemplo (entradas R$ 350,00, saídas R$ 115,00, saldo R$ 235,00).
 
 **Verificação feita:** arquivo relido com o openpyxl (abas, validações, formatações condicionais, gráficos, impressão e comentários) e 138 fórmulas conferidas (parênteses, funções permitidas e nomes de abas). O LibreOffice não está instalado neste computador, então as fórmulas **não foram recalculadas**. Pendência: abrir a planilha no Excel e no Google Planilhas e testar (ver lista no resumo da etapa).
+
+## 2026-11-11 | Etapa K: link do formulário, revisão final e publicação
+**O que foi feito:** o botão da página Feedback passou a apontar para o Google Forms real do projeto (abre em nova aba, com `target="_blank"` e `rel="noopener"`), e o texto provisório que existia no lugar foi removido de todos os arquivos. Foi feita uma revisão visual final das 10 páginas em 360, 768 e 1280 px, com capturas da página inteira.
+
+**O que a revisão conferiu:** sem rolagem horizontal; topo e menu sem sobreposição (logo, A−, A+, Alto contraste e hambúrguer); rodapé com mascote, onda e links alinhados e com área de toque de 44 px; mascote do rodapé sem encostar em nenhum texto ou botão; cards, caixas das aulas, trilha de bolinhas e ilustrações sem cortes. Nenhum ajuste de layout foi necessário nesta rodada.

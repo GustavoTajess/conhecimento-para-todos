@@ -49,7 +49,7 @@ Depois acesse http://localhost:8000 no navegador. Para parar, aperte `Ctrl` + `C
 
 ## O que falta preencher
 
-- **Link do formulário de opinião:** em `feedback.html`, troque `LINK_DO_GOOGLE_FORMS` pelo endereço do Google Forms. É o único lugar do site com esse link.
+- **Link do formulário de opinião:** já está em `feedback.html` (é o único lugar do site com esse link). Para trocar de formulário, mude o endereço desse botão.
 - **Resultados do diagnóstico:** em `sobre.html`, troque `[PREENCHER]` pelos resultados reais do questionário e das conversas.
 - **Planilha:** confira abrindo no Excel ou no Google Planilhas e digitando valores de teste.
 
