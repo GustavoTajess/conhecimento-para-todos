@@ -89,3 +89,18 @@
 - O "404" foi feito como a página 404.html do GitHub Pages.
 
 **Revisão automática (Playwright, 360 e 1280 px, normal e alto contraste):** 37 aulas; sem rolagem horizontal; títulos em ordem; contraste dentro do mínimo; decorações escondidas no alto contraste; progresso salvo ao recarregar e mostrado nos cards; menu por teclado; site funcionando sem JavaScript; links e âncoras sem erro; nenhuma página acima de 150 KB. Foram corrigidos: um código longo que estourava a largura no celular (Excel), um cartão do Kit que esticava a grade e setas sem aria-hidden.
+
+## 2026-11-11 | Etapa J: nova planilha de controle financeiro
+**O que foi feito:** a planilha `downloads/controle-financeiro.xlsx` foi refeita pelo script `ferramentas/gerar_planilha.py`, no mesmo visual do site (verde-petróleo, creme e laranja-tijolo). Passou a ter 7 abas, nesta ordem: Como usar, Painel, Entradas, Saídas, Resumo mensal, Metas e Categorias. A planilha abre já na aba Como usar. O tamanho indicado no Kit passou de 16 KB para 47 KB.
+- **Painel:** escolha de ano e de mês (lista), quatro cartões (entradas, saídas, saldo e % da meta de economia), frase automática ("Você está no azul!" ou "Atenção: você gastou R$ X a mais"), gráfico de colunas de entradas x saídas por mês, gráfico de barras de gastos por categoria e quadro de negócio x pessoal.
+- **Entradas e Saídas:** 500 linhas formatadas, listas suspensas de categoria e forma de pagamento, campo Tipo (Material do negócio ou Pessoal) nas saídas, validação de data e de valor, total no topo e três linhas de exemplo em cinza itálico.
+- **Resumo mensal, Metas e Categorias:** saldo do mês e acumulado com cores condicionais (verde e vermelho com fundo rosado), meta de economia e metas de compra com barra de progresso feita com REPT, e listas de categorias que a própria pessoa pode ampliar.
+- **Facilidades:** células amarelas só onde se digita, fórmulas com SEERRO (IFERROR) para nunca aparecer erro, notas explicativas nas células principais e impressão do Painel e do Resumo mensal em uma página paisagem.
+
+**Decisões e por quê:**
+- Só funções que existem no Excel (computador e celular), no Google Planilhas e no LibreOffice: SOMASES, SE, SEERRO, DATA, CORRESP, MÁXIMO, MÍNIMO, REPT, ARRUMAR (FIXED). Sem macros, sem tabelas dinâmicas e sem funções de versões novas.
+- Nas listas de categoria, quem digitar um nome novo só recebe um aviso (não é bloqueado), para não travar iniciantes. Só o campo Tipo é estrito.
+- O ano escolhido no Painel vale para o Resumo mensal inteiro, para existir um único lugar de mudar o ano.
+- A planilha traz exemplos de março de 2026, e o Painel abre em "2026" e "Ano todo", então já mostra números de exemplo (entradas R$ 350,00, saídas R$ 115,00, saldo R$ 235,00).
+
+**Verificação feita:** arquivo relido com o openpyxl (abas, validações, formatações condicionais, gráficos, impressão e comentários) e 138 fórmulas conferidas (parênteses, funções permitidas e nomes de abas). O LibreOffice não está instalado neste computador, então as fórmulas **não foram recalculadas**. Pendência: abrir a planilha no Excel e no Google Planilhas e testar (ver lista no resumo da etapa).
