@@ -47,3 +47,11 @@
 - As aulas intermediárias (currículo, orçamento, panfleto) resolvem problemas reais de quem busca renda extra ou emprego.
 - A aula do currículo mostra como valorizar quem nunca teve carteira assinada (trabalhos informais, voluntariado, cursos feitos neste site), porque esse é o caso de muitos do público.
 - Onde o Word no celular é pouco prático (orçamento e panfleto), a aula avisa e sugere o computador ou o Canva, em vez de prometer o que não funciona bem.
+
+## 2026-11-11 | Etapa F: aulas de PowerPoint
+**O que foi feito:** página `powerpoint.html` com 7 aulas (4 do nível Básico e 3 do Intermediário); card do PowerPoint em Trilhas virou link.
+
+**Decisões e por quê:**
+- A aula "Apresentação de um produto" ensina uma estrutura de 6 slides (capa, problema, solução, preços, como pedir, contato) que o aluno pode usar para vender.
+- Animações entram só no nível Intermediário e com o aviso de usar pouco, para evitar apresentações confusas.
+- A aula final ensina a exportar para PDF e imagem, porque o público costuma compartilhar tudo por WhatsApp.
